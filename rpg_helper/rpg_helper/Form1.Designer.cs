@@ -52,18 +52,18 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.armorclass_numbox = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
-            this.speed_asm_label = new System.Windows.Forms.Label();
+            this.speed_abm_label = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.initative_asm_label = new System.Windows.Forms.Label();
+            this.initative_abm_label = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.perception_asm_label = new System.Windows.Forms.Label();
+            this.perception_abm_label = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.proficiency_asm_label = new System.Windows.Forms.Label();
+            this.proficiency_abm_label = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.char_asm_label = new System.Windows.Forms.Label();
-            this.con_asm_label = new System.Windows.Forms.Label();
-            this.wis_asm_label = new System.Windows.Forms.Label();
-            this.dex_asm_label = new System.Windows.Forms.Label();
+            this.char_abm_label = new System.Windows.Forms.Label();
+            this.const_abm_label = new System.Windows.Forms.Label();
+            this.wis_abm_label = new System.Windows.Forms.Label();
+            this.dex_abm_label = new System.Windows.Forms.Label();
             this.str_abm_label = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -121,7 +121,7 @@
             this.investigation_label = new System.Windows.Forms.Label();
             this.investigation_checkbox = new System.Windows.Forms.CheckBox();
             this.intimidation_checkbox = new System.Windows.Forms.CheckBox();
-            this.imtimidation_label = new System.Windows.Forms.Label();
+            this.intimidation_label = new System.Windows.Forms.Label();
             this.insight_checkbox = new System.Windows.Forms.CheckBox();
             this.insight_label = new System.Windows.Forms.Label();
             this.survival_label = new System.Windows.Forms.Label();
@@ -131,7 +131,7 @@
             this.sleightofhand_label = new System.Windows.Forms.Label();
             this.sleightofhand_checkbox = new System.Windows.Forms.CheckBox();
             this.religion_label = new System.Windows.Forms.Label();
-            this.regligion_checkbox = new System.Windows.Forms.CheckBox();
+            this.religion_checkbox = new System.Windows.Forms.CheckBox();
             this.persuasion_checkbox = new System.Windows.Forms.CheckBox();
             this.persuasion_label = new System.Windows.Forms.Label();
             this.performance_checkbox = new System.Windows.Forms.CheckBox();
@@ -145,10 +145,21 @@
             this.intel_save_checkbox = new System.Windows.Forms.CheckBox();
             this.const_save_label = new System.Windows.Forms.Label();
             this.const_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.label32 = new System.Windows.Forms.Label();
+            this.dex_save_label = new System.Windows.Forms.Label();
             this.dex_save_checkbox = new System.Windows.Forms.CheckBox();
             this.str_save_checkbox = new System.Windows.Forms.CheckBox();
             this.strength_save_label = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.char_final_label = new System.Windows.Forms.Label();
+            this.const_final_label = new System.Windows.Forms.Label();
+            this.wis_final_label = new System.Windows.Forms.Label();
+            this.dex_final_label = new System.Windows.Forms.Label();
+            this.str_final_label = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -168,6 +179,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).BeginInit();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -185,6 +197,7 @@
             // 
             // character_page
             // 
+            this.character_page.Controls.Add(this.groupBox8);
             this.character_page.Controls.Add(this.groupBox7);
             this.character_page.Controls.Add(this.groupBox6);
             this.character_page.Controls.Add(this.groupBox5);
@@ -209,7 +222,7 @@
             this.groupBox6.Controls.Add(this.sleightofhand_label);
             this.groupBox6.Controls.Add(this.sleightofhand_checkbox);
             this.groupBox6.Controls.Add(this.religion_label);
-            this.groupBox6.Controls.Add(this.regligion_checkbox);
+            this.groupBox6.Controls.Add(this.religion_checkbox);
             this.groupBox6.Controls.Add(this.persuasion_checkbox);
             this.groupBox6.Controls.Add(this.persuasion_label);
             this.groupBox6.Controls.Add(this.performance_checkbox);
@@ -223,7 +236,7 @@
             this.groupBox6.Controls.Add(this.investigation_label);
             this.groupBox6.Controls.Add(this.investigation_checkbox);
             this.groupBox6.Controls.Add(this.intimidation_checkbox);
-            this.groupBox6.Controls.Add(this.imtimidation_label);
+            this.groupBox6.Controls.Add(this.intimidation_label);
             this.groupBox6.Controls.Add(this.insight_checkbox);
             this.groupBox6.Controls.Add(this.insight_label);
             this.groupBox6.Controls.Add(this.history_label);
@@ -435,18 +448,18 @@
             // 
             this.groupBox3.Controls.Add(this.armorclass_numbox);
             this.groupBox3.Controls.Add(this.label25);
-            this.groupBox3.Controls.Add(this.speed_asm_label);
+            this.groupBox3.Controls.Add(this.speed_abm_label);
             this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.initative_asm_label);
+            this.groupBox3.Controls.Add(this.initative_abm_label);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.perception_asm_label);
+            this.groupBox3.Controls.Add(this.perception_abm_label);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.proficiency_asm_label);
+            this.groupBox3.Controls.Add(this.proficiency_abm_label);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.char_asm_label);
-            this.groupBox3.Controls.Add(this.con_asm_label);
-            this.groupBox3.Controls.Add(this.wis_asm_label);
-            this.groupBox3.Controls.Add(this.dex_asm_label);
+            this.groupBox3.Controls.Add(this.char_abm_label);
+            this.groupBox3.Controls.Add(this.const_abm_label);
+            this.groupBox3.Controls.Add(this.wis_abm_label);
+            this.groupBox3.Controls.Add(this.dex_abm_label);
             this.groupBox3.Controls.Add(this.str_abm_label);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label13);
@@ -476,15 +489,15 @@
             this.label25.TabIndex = 42;
             this.label25.Text = "Armor Class:";
             // 
-            // speed_asm_label
+            // speed_abm_label
             // 
-            this.speed_asm_label.AutoSize = true;
-            this.speed_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.speed_asm_label.Location = new System.Drawing.Point(382, 28);
-            this.speed_asm_label.Name = "speed_asm_label";
-            this.speed_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.speed_asm_label.TabIndex = 41;
-            this.speed_asm_label.Text = "0";
+            this.speed_abm_label.AutoSize = true;
+            this.speed_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.speed_abm_label.Location = new System.Drawing.Point(382, 28);
+            this.speed_abm_label.Name = "speed_abm_label";
+            this.speed_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.speed_abm_label.TabIndex = 41;
+            this.speed_abm_label.Text = "0";
             // 
             // label21
             // 
@@ -495,15 +508,15 @@
             this.label21.TabIndex = 40;
             this.label21.Text = "Speed:";
             // 
-            // initative_asm_label
+            // initative_abm_label
             // 
-            this.initative_asm_label.AutoSize = true;
-            this.initative_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.initative_asm_label.Location = new System.Drawing.Point(331, 54);
-            this.initative_asm_label.Name = "initative_asm_label";
-            this.initative_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.initative_asm_label.TabIndex = 39;
-            this.initative_asm_label.Text = "0";
+            this.initative_abm_label.AutoSize = true;
+            this.initative_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.initative_abm_label.Location = new System.Drawing.Point(331, 54);
+            this.initative_abm_label.Name = "initative_abm_label";
+            this.initative_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.initative_abm_label.TabIndex = 39;
+            this.initative_abm_label.Text = "0";
             // 
             // label18
             // 
@@ -514,15 +527,15 @@
             this.label18.TabIndex = 38;
             this.label18.Text = "Initiative:";
             // 
-            // perception_asm_label
+            // perception_abm_label
             // 
-            this.perception_asm_label.AutoSize = true;
-            this.perception_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.perception_asm_label.Location = new System.Drawing.Point(316, 28);
-            this.perception_asm_label.Name = "perception_asm_label";
-            this.perception_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.perception_asm_label.TabIndex = 37;
-            this.perception_asm_label.Text = "0";
+            this.perception_abm_label.AutoSize = true;
+            this.perception_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.perception_abm_label.Location = new System.Drawing.Point(316, 28);
+            this.perception_abm_label.Name = "perception_abm_label";
+            this.perception_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.perception_abm_label.TabIndex = 37;
+            this.perception_abm_label.Text = "0";
             // 
             // label19
             // 
@@ -533,15 +546,15 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "Perception:";
             // 
-            // proficiency_asm_label
+            // proficiency_abm_label
             // 
-            this.proficiency_asm_label.AutoSize = true;
-            this.proficiency_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.proficiency_asm_label.Location = new System.Drawing.Point(257, 54);
-            this.proficiency_asm_label.Name = "proficiency_asm_label";
-            this.proficiency_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.proficiency_asm_label.TabIndex = 35;
-            this.proficiency_asm_label.Text = "2";
+            this.proficiency_abm_label.AutoSize = true;
+            this.proficiency_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.proficiency_abm_label.Location = new System.Drawing.Point(257, 54);
+            this.proficiency_abm_label.Name = "proficiency_abm_label";
+            this.proficiency_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.proficiency_abm_label.TabIndex = 35;
+            this.proficiency_abm_label.Text = "2";
             // 
             // label17
             // 
@@ -552,45 +565,45 @@
             this.label17.TabIndex = 34;
             this.label17.Text = "Proficiency Bonus:";
             // 
-            // char_asm_label
+            // char_abm_label
             // 
-            this.char_asm_label.AutoSize = true;
-            this.char_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.char_asm_label.Location = new System.Drawing.Point(230, 28);
-            this.char_asm_label.Name = "char_asm_label";
-            this.char_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.char_asm_label.TabIndex = 33;
-            this.char_asm_label.Text = "0";
+            this.char_abm_label.AutoSize = true;
+            this.char_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.char_abm_label.Location = new System.Drawing.Point(230, 28);
+            this.char_abm_label.Name = "char_abm_label";
+            this.char_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.char_abm_label.TabIndex = 33;
+            this.char_abm_label.Text = "0";
             // 
-            // con_asm_label
+            // const_abm_label
             // 
-            this.con_asm_label.AutoSize = true;
-            this.con_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.con_asm_label.Location = new System.Drawing.Point(152, 28);
-            this.con_asm_label.Name = "con_asm_label";
-            this.con_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.con_asm_label.TabIndex = 32;
-            this.con_asm_label.Text = "0";
+            this.const_abm_label.AutoSize = true;
+            this.const_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.const_abm_label.Location = new System.Drawing.Point(152, 28);
+            this.const_abm_label.Name = "const_abm_label";
+            this.const_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.const_abm_label.TabIndex = 32;
+            this.const_abm_label.Text = "0";
             // 
-            // wis_asm_label
+            // wis_abm_label
             // 
-            this.wis_asm_label.AutoSize = true;
-            this.wis_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.wis_asm_label.Location = new System.Drawing.Point(137, 54);
-            this.wis_asm_label.Name = "wis_asm_label";
-            this.wis_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.wis_asm_label.TabIndex = 31;
-            this.wis_asm_label.Text = "0";
+            this.wis_abm_label.AutoSize = true;
+            this.wis_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.wis_abm_label.Location = new System.Drawing.Point(137, 54);
+            this.wis_abm_label.Name = "wis_abm_label";
+            this.wis_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.wis_abm_label.TabIndex = 31;
+            this.wis_abm_label.Text = "0";
             // 
-            // dex_asm_label
+            // dex_abm_label
             // 
-            this.dex_asm_label.AutoSize = true;
-            this.dex_asm_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.dex_asm_label.Location = new System.Drawing.Point(62, 54);
-            this.dex_asm_label.Name = "dex_asm_label";
-            this.dex_asm_label.Size = new System.Drawing.Size(13, 13);
-            this.dex_asm_label.TabIndex = 30;
-            this.dex_asm_label.Text = "0";
+            this.dex_abm_label.AutoSize = true;
+            this.dex_abm_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.dex_abm_label.Location = new System.Drawing.Point(62, 54);
+            this.dex_abm_label.Name = "dex_abm_label";
+            this.dex_abm_label.Size = new System.Drawing.Size(13, 13);
+            this.dex_abm_label.TabIndex = 30;
+            this.dex_abm_label.Text = "0";
             // 
             // str_abm_label
             // 
@@ -664,7 +677,7 @@
             this.groupBox2.Size = new System.Drawing.Size(344, 100);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ability Scores";
+            this.groupBox2.Text = "Ability Scores Rolled";
             // 
             // char_abs_numbox
             // 
@@ -893,6 +906,7 @@
             this.race_dropdown.Name = "race_dropdown";
             this.race_dropdown.Size = new System.Drawing.Size(121, 21);
             this.race_dropdown.TabIndex = 15;
+            this.race_dropdown.SelectedValueChanged += new System.EventHandler(this.race_dropdown_SelectedValueChanged);
             // 
             // level_numberbox
             // 
@@ -1224,15 +1238,15 @@
             this.intimidation_checkbox.Text = "Intimidation";
             this.intimidation_checkbox.UseVisualStyleBackColor = true;
             // 
-            // imtimidation_label
+            // intimidation_label
             // 
-            this.imtimidation_label.AutoSize = true;
-            this.imtimidation_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.imtimidation_label.Location = new System.Drawing.Point(208, 40);
-            this.imtimidation_label.Name = "imtimidation_label";
-            this.imtimidation_label.Size = new System.Drawing.Size(13, 13);
-            this.imtimidation_label.TabIndex = 15;
-            this.imtimidation_label.Text = "0";
+            this.intimidation_label.AutoSize = true;
+            this.intimidation_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.intimidation_label.Location = new System.Drawing.Point(208, 40);
+            this.intimidation_label.Name = "intimidation_label";
+            this.intimidation_label.Size = new System.Drawing.Size(13, 13);
+            this.intimidation_label.TabIndex = 15;
+            this.intimidation_label.Text = "0";
             // 
             // insight_checkbox
             // 
@@ -1324,15 +1338,15 @@
             this.religion_label.TabIndex = 31;
             this.religion_label.Text = "0";
             // 
-            // regligion_checkbox
+            // religion_checkbox
             // 
-            this.regligion_checkbox.AutoSize = true;
-            this.regligion_checkbox.Location = new System.Drawing.Point(227, 62);
-            this.regligion_checkbox.Name = "regligion_checkbox";
-            this.regligion_checkbox.Size = new System.Drawing.Size(64, 17);
-            this.regligion_checkbox.TabIndex = 30;
-            this.regligion_checkbox.Text = "Religion";
-            this.regligion_checkbox.UseVisualStyleBackColor = true;
+            this.religion_checkbox.AutoSize = true;
+            this.religion_checkbox.Location = new System.Drawing.Point(227, 62);
+            this.religion_checkbox.Name = "religion_checkbox";
+            this.religion_checkbox.Size = new System.Drawing.Size(64, 17);
+            this.religion_checkbox.TabIndex = 30;
+            this.religion_checkbox.Text = "Religion";
+            this.religion_checkbox.UseVisualStyleBackColor = true;
             // 
             // persuasion_checkbox
             // 
@@ -1384,7 +1398,7 @@
             this.groupBox7.Controls.Add(this.intel_save_checkbox);
             this.groupBox7.Controls.Add(this.const_save_label);
             this.groupBox7.Controls.Add(this.const_save_checkbox);
-            this.groupBox7.Controls.Add(this.label32);
+            this.groupBox7.Controls.Add(this.dex_save_label);
             this.groupBox7.Controls.Add(this.dex_save_checkbox);
             this.groupBox7.Controls.Add(this.str_save_checkbox);
             this.groupBox7.Controls.Add(this.strength_save_label);
@@ -1475,15 +1489,15 @@
             this.const_save_checkbox.Text = "Constitution";
             this.const_save_checkbox.UseVisualStyleBackColor = true;
             // 
-            // label32
+            // dex_save_label
             // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label32.Location = new System.Drawing.Point(83, 42);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(13, 13);
-            this.label32.TabIndex = 16;
-            this.label32.Text = "0";
+            this.dex_save_label.AutoSize = true;
+            this.dex_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.dex_save_label.Location = new System.Drawing.Point(83, 42);
+            this.dex_save_label.Name = "dex_save_label";
+            this.dex_save_label.Size = new System.Drawing.Size(13, 13);
+            this.dex_save_label.TabIndex = 16;
+            this.dex_save_label.Text = "0";
             // 
             // dex_save_checkbox
             // 
@@ -1514,6 +1528,120 @@
             this.strength_save_label.Size = new System.Drawing.Size(13, 13);
             this.strength_save_label.TabIndex = 13;
             this.strength_save_label.Text = "0";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.char_final_label);
+            this.groupBox8.Controls.Add(this.const_final_label);
+            this.groupBox8.Controls.Add(this.wis_final_label);
+            this.groupBox8.Controls.Add(this.dex_final_label);
+            this.groupBox8.Controls.Add(this.str_final_label);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.label38);
+            this.groupBox8.Location = new System.Drawing.Point(493, 262);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(332, 59);
+            this.groupBox8.TabIndex = 33;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Ability Scores Final";
+            // 
+            // char_final_label
+            // 
+            this.char_final_label.AutoSize = true;
+            this.char_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.char_final_label.Location = new System.Drawing.Point(230, 16);
+            this.char_final_label.Name = "char_final_label";
+            this.char_final_label.Size = new System.Drawing.Size(13, 13);
+            this.char_final_label.TabIndex = 43;
+            this.char_final_label.Text = "0";
+            // 
+            // const_final_label
+            // 
+            this.const_final_label.AutoSize = true;
+            this.const_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.const_final_label.Location = new System.Drawing.Point(152, 16);
+            this.const_final_label.Name = "const_final_label";
+            this.const_final_label.Size = new System.Drawing.Size(13, 13);
+            this.const_final_label.TabIndex = 42;
+            this.const_final_label.Text = "0";
+            // 
+            // wis_final_label
+            // 
+            this.wis_final_label.AutoSize = true;
+            this.wis_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.wis_final_label.Location = new System.Drawing.Point(137, 42);
+            this.wis_final_label.Name = "wis_final_label";
+            this.wis_final_label.Size = new System.Drawing.Size(13, 13);
+            this.wis_final_label.TabIndex = 41;
+            this.wis_final_label.Text = "0";
+            // 
+            // dex_final_label
+            // 
+            this.dex_final_label.AutoSize = true;
+            this.dex_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.dex_final_label.Location = new System.Drawing.Point(62, 42);
+            this.dex_final_label.Name = "dex_final_label";
+            this.dex_final_label.Size = new System.Drawing.Size(13, 13);
+            this.dex_final_label.TabIndex = 40;
+            this.dex_final_label.Text = "0";
+            // 
+            // str_final_label
+            // 
+            this.str_final_label.AutoSize = true;
+            this.str_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.str_final_label.Location = new System.Drawing.Point(62, 16);
+            this.str_final_label.Name = "str_final_label";
+            this.str_final_label.Size = new System.Drawing.Size(13, 13);
+            this.str_final_label.TabIndex = 39;
+            this.str_final_label.Text = "0";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(171, 16);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(53, 13);
+            this.label34.TabIndex = 38;
+            this.label34.Text = "Charisma:";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(83, 42);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(48, 13);
+            this.label35.TabIndex = 37;
+            this.label35.Text = "Wisdom:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(81, 16);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(65, 13);
+            this.label36.TabIndex = 36;
+            this.label36.Text = "Constitution:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(5, 42);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(51, 13);
+            this.label37.TabIndex = 35;
+            this.label37.Text = "Dexterity:";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(6, 16);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(50, 13);
+            this.label38.TabIndex = 34;
+            this.label38.Text = "Strength:";
             // 
             // main_form
             // 
@@ -1549,6 +1677,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1595,17 +1725,17 @@
         private System.Windows.Forms.NumericUpDown str_abs_numbox;
         private System.Windows.Forms.Label str_abm_label;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label initative_asm_label;
+        private System.Windows.Forms.Label initative_abm_label;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label perception_asm_label;
+        private System.Windows.Forms.Label perception_abm_label;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label proficiency_asm_label;
+        private System.Windows.Forms.Label proficiency_abm_label;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label char_asm_label;
-        private System.Windows.Forms.Label con_asm_label;
-        private System.Windows.Forms.Label wis_asm_label;
-        private System.Windows.Forms.Label dex_asm_label;
-        private System.Windows.Forms.Label speed_asm_label;
+        private System.Windows.Forms.Label char_abm_label;
+        private System.Windows.Forms.Label const_abm_label;
+        private System.Windows.Forms.Label wis_abm_label;
+        private System.Windows.Forms.Label dex_abm_label;
+        private System.Windows.Forms.Label speed_abm_label;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label maxhp_label;
         private System.Windows.Forms.Label label24;
@@ -1636,7 +1766,7 @@
         private System.Windows.Forms.Label investigation_label;
         private System.Windows.Forms.CheckBox investigation_checkbox;
         private System.Windows.Forms.CheckBox intimidation_checkbox;
-        private System.Windows.Forms.Label imtimidation_label;
+        private System.Windows.Forms.Label intimidation_label;
         private System.Windows.Forms.CheckBox insight_checkbox;
         private System.Windows.Forms.Label insight_label;
         private System.Windows.Forms.Label history_label;
@@ -1658,7 +1788,7 @@
         private System.Windows.Forms.Label sleightofhand_label;
         private System.Windows.Forms.CheckBox sleightofhand_checkbox;
         private System.Windows.Forms.Label religion_label;
-        private System.Windows.Forms.CheckBox regligion_checkbox;
+        private System.Windows.Forms.CheckBox religion_checkbox;
         private System.Windows.Forms.CheckBox persuasion_checkbox;
         private System.Windows.Forms.Label persuasion_label;
         private System.Windows.Forms.CheckBox performance_checkbox;
@@ -1672,10 +1802,21 @@
         private System.Windows.Forms.CheckBox intel_save_checkbox;
         private System.Windows.Forms.Label const_save_label;
         private System.Windows.Forms.CheckBox const_save_checkbox;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label dex_save_label;
         private System.Windows.Forms.CheckBox dex_save_checkbox;
         private System.Windows.Forms.CheckBox str_save_checkbox;
         private System.Windows.Forms.Label strength_save_label;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label char_final_label;
+        private System.Windows.Forms.Label const_final_label;
+        private System.Windows.Forms.Label wis_final_label;
+        private System.Windows.Forms.Label dex_final_label;
+        private System.Windows.Forms.Label str_final_label;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
     }
 }
 
