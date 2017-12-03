@@ -30,7 +30,67 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.character_page = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.char_final_label = new System.Windows.Forms.Label();
+            this.const_final_label = new System.Windows.Forms.Label();
+            this.wis_final_label = new System.Windows.Forms.Label();
+            this.dex_final_label = new System.Windows.Forms.Label();
+            this.str_final_label = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.char_save_label = new System.Windows.Forms.Label();
+            this.char_save_checkbox = new System.Windows.Forms.CheckBox();
+            this.wisd_save_label = new System.Windows.Forms.Label();
+            this.wis_save_checkbox = new System.Windows.Forms.CheckBox();
+            this.intel_save_label = new System.Windows.Forms.Label();
+            this.intel_save_checkbox = new System.Windows.Forms.CheckBox();
+            this.const_save_label = new System.Windows.Forms.Label();
+            this.const_save_checkbox = new System.Windows.Forms.CheckBox();
+            this.dex_save_label = new System.Windows.Forms.Label();
+            this.dex_save_checkbox = new System.Windows.Forms.CheckBox();
+            this.str_save_checkbox = new System.Windows.Forms.CheckBox();
+            this.strength_save_label = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.survival_label = new System.Windows.Forms.Label();
+            this.survival_checkbox = new System.Windows.Forms.CheckBox();
+            this.stealth_label = new System.Windows.Forms.Label();
+            this.stealth_checkbox = new System.Windows.Forms.CheckBox();
+            this.sleightofhand_label = new System.Windows.Forms.Label();
+            this.sleightofhand_checkbox = new System.Windows.Forms.CheckBox();
+            this.religion_label = new System.Windows.Forms.Label();
+            this.religion_checkbox = new System.Windows.Forms.CheckBox();
+            this.persuasion_checkbox = new System.Windows.Forms.CheckBox();
+            this.persuasion_label = new System.Windows.Forms.Label();
+            this.performance_checkbox = new System.Windows.Forms.CheckBox();
+            this.performance_label = new System.Windows.Forms.Label();
+            this.perception_label = new System.Windows.Forms.Label();
+            this.perception_checkbox = new System.Windows.Forms.CheckBox();
+            this.nature_label = new System.Windows.Forms.Label();
+            this.nature_checkbox = new System.Windows.Forms.CheckBox();
+            this.medicine_label = new System.Windows.Forms.Label();
+            this.medicine_checkbox = new System.Windows.Forms.CheckBox();
+            this.investigation_label = new System.Windows.Forms.Label();
+            this.investigation_checkbox = new System.Windows.Forms.CheckBox();
+            this.intimidation_checkbox = new System.Windows.Forms.CheckBox();
+            this.intimidation_label = new System.Windows.Forms.Label();
+            this.insight_checkbox = new System.Windows.Forms.CheckBox();
+            this.insight_label = new System.Windows.Forms.Label();
+            this.history_label = new System.Windows.Forms.Label();
+            this.history_checkbox = new System.Windows.Forms.CheckBox();
+            this.deception_label = new System.Windows.Forms.Label();
+            this.deception_checkbox = new System.Windows.Forms.CheckBox();
+            this.athletics_label = new System.Windows.Forms.Label();
+            this.athletics_checkbox = new System.Windows.Forms.CheckBox();
+            this.arcana_label = new System.Windows.Forms.Label();
+            this.arcana_checkbox = new System.Windows.Forms.CheckBox();
+            this.animal_label = new System.Windows.Forms.Label();
+            this.animal_checkbox = new System.Windows.Forms.CheckBox();
+            this.acro_checkbox = new System.Windows.Forms.CheckBox();
+            this.acro_label = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
@@ -100,68 +160,11 @@
             this.notes_page = new System.Windows.Forms.TabPage();
             this.npc_page = new System.Windows.Forms.TabPage();
             this.reference_page = new System.Windows.Forms.TabPage();
-            this.acro_label = new System.Windows.Forms.Label();
-            this.acro_checkbox = new System.Windows.Forms.CheckBox();
-            this.animal_checkbox = new System.Windows.Forms.CheckBox();
-            this.animal_label = new System.Windows.Forms.Label();
-            this.arcana_label = new System.Windows.Forms.Label();
-            this.arcana_checkbox = new System.Windows.Forms.CheckBox();
-            this.athletics_label = new System.Windows.Forms.Label();
-            this.athletics_checkbox = new System.Windows.Forms.CheckBox();
-            this.deception_label = new System.Windows.Forms.Label();
-            this.deception_checkbox = new System.Windows.Forms.CheckBox();
-            this.history_label = new System.Windows.Forms.Label();
-            this.history_checkbox = new System.Windows.Forms.CheckBox();
-            this.perception_label = new System.Windows.Forms.Label();
-            this.perception_checkbox = new System.Windows.Forms.CheckBox();
-            this.nature_label = new System.Windows.Forms.Label();
-            this.nature_checkbox = new System.Windows.Forms.CheckBox();
-            this.medicine_label = new System.Windows.Forms.Label();
-            this.medicine_checkbox = new System.Windows.Forms.CheckBox();
-            this.investigation_label = new System.Windows.Forms.Label();
-            this.investigation_checkbox = new System.Windows.Forms.CheckBox();
-            this.intimidation_checkbox = new System.Windows.Forms.CheckBox();
-            this.intimidation_label = new System.Windows.Forms.Label();
-            this.insight_checkbox = new System.Windows.Forms.CheckBox();
-            this.insight_label = new System.Windows.Forms.Label();
-            this.survival_label = new System.Windows.Forms.Label();
-            this.survival_checkbox = new System.Windows.Forms.CheckBox();
-            this.stealth_label = new System.Windows.Forms.Label();
-            this.stealth_checkbox = new System.Windows.Forms.CheckBox();
-            this.sleightofhand_label = new System.Windows.Forms.Label();
-            this.sleightofhand_checkbox = new System.Windows.Forms.CheckBox();
-            this.religion_label = new System.Windows.Forms.Label();
-            this.religion_checkbox = new System.Windows.Forms.CheckBox();
-            this.persuasion_checkbox = new System.Windows.Forms.CheckBox();
-            this.persuasion_label = new System.Windows.Forms.Label();
-            this.performance_checkbox = new System.Windows.Forms.CheckBox();
-            this.performance_label = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.char_save_label = new System.Windows.Forms.Label();
-            this.char_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.wisd_save_label = new System.Windows.Forms.Label();
-            this.wis_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.intel_save_label = new System.Windows.Forms.Label();
-            this.intel_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.const_save_label = new System.Windows.Forms.Label();
-            this.const_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.dex_save_label = new System.Windows.Forms.Label();
-            this.dex_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.str_save_checkbox = new System.Windows.Forms.CheckBox();
-            this.strength_save_label = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.char_final_label = new System.Windows.Forms.Label();
-            this.const_final_label = new System.Windows.Forms.Label();
-            this.wis_final_label = new System.Windows.Forms.Label();
-            this.dex_final_label = new System.Windows.Forms.Label();
-            this.str_final_label = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.features_textbox = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -178,8 +181,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -197,6 +198,7 @@
             // 
             // character_page
             // 
+            this.character_page.Controls.Add(this.features_textbox);
             this.character_page.Controls.Add(this.groupBox8);
             this.character_page.Controls.Add(this.groupBox7);
             this.character_page.Controls.Add(this.groupBox6);
@@ -212,6 +214,261 @@
             this.character_page.TabIndex = 0;
             this.character_page.Text = "Character";
             this.character_page.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.char_final_label);
+            this.groupBox8.Controls.Add(this.const_final_label);
+            this.groupBox8.Controls.Add(this.wis_final_label);
+            this.groupBox8.Controls.Add(this.dex_final_label);
+            this.groupBox8.Controls.Add(this.str_final_label);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.label38);
+            this.groupBox8.Location = new System.Drawing.Point(493, 262);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(332, 59);
+            this.groupBox8.TabIndex = 33;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Ability Scores Final";
+            // 
+            // char_final_label
+            // 
+            this.char_final_label.AutoSize = true;
+            this.char_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.char_final_label.Location = new System.Drawing.Point(230, 16);
+            this.char_final_label.Name = "char_final_label";
+            this.char_final_label.Size = new System.Drawing.Size(13, 13);
+            this.char_final_label.TabIndex = 43;
+            this.char_final_label.Text = "0";
+            // 
+            // const_final_label
+            // 
+            this.const_final_label.AutoSize = true;
+            this.const_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.const_final_label.Location = new System.Drawing.Point(152, 16);
+            this.const_final_label.Name = "const_final_label";
+            this.const_final_label.Size = new System.Drawing.Size(13, 13);
+            this.const_final_label.TabIndex = 42;
+            this.const_final_label.Text = "0";
+            // 
+            // wis_final_label
+            // 
+            this.wis_final_label.AutoSize = true;
+            this.wis_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.wis_final_label.Location = new System.Drawing.Point(137, 42);
+            this.wis_final_label.Name = "wis_final_label";
+            this.wis_final_label.Size = new System.Drawing.Size(13, 13);
+            this.wis_final_label.TabIndex = 41;
+            this.wis_final_label.Text = "0";
+            // 
+            // dex_final_label
+            // 
+            this.dex_final_label.AutoSize = true;
+            this.dex_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.dex_final_label.Location = new System.Drawing.Point(62, 42);
+            this.dex_final_label.Name = "dex_final_label";
+            this.dex_final_label.Size = new System.Drawing.Size(13, 13);
+            this.dex_final_label.TabIndex = 40;
+            this.dex_final_label.Text = "0";
+            // 
+            // str_final_label
+            // 
+            this.str_final_label.AutoSize = true;
+            this.str_final_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.str_final_label.Location = new System.Drawing.Point(62, 16);
+            this.str_final_label.Name = "str_final_label";
+            this.str_final_label.Size = new System.Drawing.Size(13, 13);
+            this.str_final_label.TabIndex = 39;
+            this.str_final_label.Text = "0";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(171, 16);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(53, 13);
+            this.label34.TabIndex = 38;
+            this.label34.Text = "Charisma:";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(83, 42);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(48, 13);
+            this.label35.TabIndex = 37;
+            this.label35.Text = "Wisdom:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(81, 16);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(65, 13);
+            this.label36.TabIndex = 36;
+            this.label36.Text = "Constitution:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(5, 42);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(51, 13);
+            this.label37.TabIndex = 35;
+            this.label37.Text = "Dexterity:";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(6, 16);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(50, 13);
+            this.label38.TabIndex = 34;
+            this.label38.Text = "Strength:";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.char_save_label);
+            this.groupBox7.Controls.Add(this.char_save_checkbox);
+            this.groupBox7.Controls.Add(this.wisd_save_label);
+            this.groupBox7.Controls.Add(this.wis_save_checkbox);
+            this.groupBox7.Controls.Add(this.intel_save_label);
+            this.groupBox7.Controls.Add(this.intel_save_checkbox);
+            this.groupBox7.Controls.Add(this.const_save_label);
+            this.groupBox7.Controls.Add(this.const_save_checkbox);
+            this.groupBox7.Controls.Add(this.dex_save_label);
+            this.groupBox7.Controls.Add(this.dex_save_checkbox);
+            this.groupBox7.Controls.Add(this.str_save_checkbox);
+            this.groupBox7.Controls.Add(this.strength_save_label);
+            this.groupBox7.Location = new System.Drawing.Point(356, 262);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(131, 155);
+            this.groupBox7.TabIndex = 32;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Saving Throws";
+            // 
+            // char_save_label
+            // 
+            this.char_save_label.AutoSize = true;
+            this.char_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.char_save_label.Location = new System.Drawing.Point(76, 133);
+            this.char_save_label.Name = "char_save_label";
+            this.char_save_label.Size = new System.Drawing.Size(13, 13);
+            this.char_save_label.TabIndex = 24;
+            this.char_save_label.Text = "0";
+            // 
+            // char_save_checkbox
+            // 
+            this.char_save_checkbox.AutoSize = true;
+            this.char_save_checkbox.Location = new System.Drawing.Point(9, 132);
+            this.char_save_checkbox.Name = "char_save_checkbox";
+            this.char_save_checkbox.Size = new System.Drawing.Size(69, 17);
+            this.char_save_checkbox.TabIndex = 23;
+            this.char_save_checkbox.Text = "Charisma";
+            this.char_save_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // wisd_save_label
+            // 
+            this.wisd_save_label.AutoSize = true;
+            this.wisd_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.wisd_save_label.Location = new System.Drawing.Point(71, 111);
+            this.wisd_save_label.Name = "wisd_save_label";
+            this.wisd_save_label.Size = new System.Drawing.Size(13, 13);
+            this.wisd_save_label.TabIndex = 22;
+            this.wisd_save_label.Text = "0";
+            // 
+            // wis_save_checkbox
+            // 
+            this.wis_save_checkbox.AutoSize = true;
+            this.wis_save_checkbox.Location = new System.Drawing.Point(9, 109);
+            this.wis_save_checkbox.Name = "wis_save_checkbox";
+            this.wis_save_checkbox.Size = new System.Drawing.Size(64, 17);
+            this.wis_save_checkbox.TabIndex = 21;
+            this.wis_save_checkbox.Text = "Wisdom";
+            this.wis_save_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // intel_save_label
+            // 
+            this.intel_save_label.AutoSize = true;
+            this.intel_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.intel_save_label.Location = new System.Drawing.Point(92, 88);
+            this.intel_save_label.Name = "intel_save_label";
+            this.intel_save_label.Size = new System.Drawing.Size(13, 13);
+            this.intel_save_label.TabIndex = 20;
+            this.intel_save_label.Text = "0";
+            // 
+            // intel_save_checkbox
+            // 
+            this.intel_save_checkbox.AutoSize = true;
+            this.intel_save_checkbox.Location = new System.Drawing.Point(9, 86);
+            this.intel_save_checkbox.Name = "intel_save_checkbox";
+            this.intel_save_checkbox.Size = new System.Drawing.Size(80, 17);
+            this.intel_save_checkbox.TabIndex = 19;
+            this.intel_save_checkbox.Text = "Intelligence";
+            this.intel_save_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // const_save_label
+            // 
+            this.const_save_label.AutoSize = true;
+            this.const_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.const_save_label.Location = new System.Drawing.Point(92, 66);
+            this.const_save_label.Name = "const_save_label";
+            this.const_save_label.Size = new System.Drawing.Size(13, 13);
+            this.const_save_label.TabIndex = 18;
+            this.const_save_label.Text = "0";
+            // 
+            // const_save_checkbox
+            // 
+            this.const_save_checkbox.AutoSize = true;
+            this.const_save_checkbox.Location = new System.Drawing.Point(9, 63);
+            this.const_save_checkbox.Name = "const_save_checkbox";
+            this.const_save_checkbox.Size = new System.Drawing.Size(81, 17);
+            this.const_save_checkbox.TabIndex = 17;
+            this.const_save_checkbox.Text = "Constitution";
+            this.const_save_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // dex_save_label
+            // 
+            this.dex_save_label.AutoSize = true;
+            this.dex_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.dex_save_label.Location = new System.Drawing.Point(83, 42);
+            this.dex_save_label.Name = "dex_save_label";
+            this.dex_save_label.Size = new System.Drawing.Size(13, 13);
+            this.dex_save_label.TabIndex = 16;
+            this.dex_save_label.Text = "0";
+            // 
+            // dex_save_checkbox
+            // 
+            this.dex_save_checkbox.AutoSize = true;
+            this.dex_save_checkbox.Location = new System.Drawing.Point(9, 40);
+            this.dex_save_checkbox.Name = "dex_save_checkbox";
+            this.dex_save_checkbox.Size = new System.Drawing.Size(67, 17);
+            this.dex_save_checkbox.TabIndex = 15;
+            this.dex_save_checkbox.Text = "Dexterity";
+            this.dex_save_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // str_save_checkbox
+            // 
+            this.str_save_checkbox.AutoSize = true;
+            this.str_save_checkbox.Location = new System.Drawing.Point(9, 17);
+            this.str_save_checkbox.Name = "str_save_checkbox";
+            this.str_save_checkbox.Size = new System.Drawing.Size(66, 17);
+            this.str_save_checkbox.TabIndex = 14;
+            this.str_save_checkbox.Text = "Strength";
+            this.str_save_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // strength_save_label
+            // 
+            this.strength_save_label.AutoSize = true;
+            this.strength_save_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.strength_save_label.Location = new System.Drawing.Point(82, 18);
+            this.strength_save_label.Name = "strength_save_label";
+            this.strength_save_label.Size = new System.Drawing.Size(13, 13);
+            this.strength_save_label.TabIndex = 13;
+            this.strength_save_label.Text = "0";
             // 
             // groupBox6
             // 
@@ -257,6 +514,366 @@
             this.groupBox6.TabIndex = 31;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Skills";
+            // 
+            // survival_label
+            // 
+            this.survival_label.AutoSize = true;
+            this.survival_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.survival_label.Location = new System.Drawing.Point(287, 132);
+            this.survival_label.Name = "survival_label";
+            this.survival_label.Size = new System.Drawing.Size(13, 13);
+            this.survival_label.TabIndex = 37;
+            this.survival_label.Text = "0";
+            // 
+            // survival_checkbox
+            // 
+            this.survival_checkbox.AutoSize = true;
+            this.survival_checkbox.Location = new System.Drawing.Point(227, 131);
+            this.survival_checkbox.Name = "survival_checkbox";
+            this.survival_checkbox.Size = new System.Drawing.Size(64, 17);
+            this.survival_checkbox.TabIndex = 36;
+            this.survival_checkbox.Text = "Survival";
+            this.survival_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // stealth_label
+            // 
+            this.stealth_label.AutoSize = true;
+            this.stealth_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.stealth_label.Location = new System.Drawing.Point(283, 109);
+            this.stealth_label.Name = "stealth_label";
+            this.stealth_label.Size = new System.Drawing.Size(13, 13);
+            this.stealth_label.TabIndex = 35;
+            this.stealth_label.Text = "0";
+            // 
+            // stealth_checkbox
+            // 
+            this.stealth_checkbox.AutoSize = true;
+            this.stealth_checkbox.Location = new System.Drawing.Point(227, 108);
+            this.stealth_checkbox.Name = "stealth_checkbox";
+            this.stealth_checkbox.Size = new System.Drawing.Size(59, 17);
+            this.stealth_checkbox.TabIndex = 34;
+            this.stealth_checkbox.Text = "Stealth";
+            this.stealth_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // sleightofhand_label
+            // 
+            this.sleightofhand_label.AutoSize = true;
+            this.sleightofhand_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.sleightofhand_label.Location = new System.Drawing.Point(322, 85);
+            this.sleightofhand_label.Name = "sleightofhand_label";
+            this.sleightofhand_label.Size = new System.Drawing.Size(13, 13);
+            this.sleightofhand_label.TabIndex = 33;
+            this.sleightofhand_label.Text = "0";
+            // 
+            // sleightofhand_checkbox
+            // 
+            this.sleightofhand_checkbox.AutoSize = true;
+            this.sleightofhand_checkbox.Location = new System.Drawing.Point(227, 85);
+            this.sleightofhand_checkbox.Name = "sleightofhand_checkbox";
+            this.sleightofhand_checkbox.Size = new System.Drawing.Size(99, 17);
+            this.sleightofhand_checkbox.TabIndex = 32;
+            this.sleightofhand_checkbox.Text = "Sleight of Hand";
+            this.sleightofhand_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // religion_label
+            // 
+            this.religion_label.AutoSize = true;
+            this.religion_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.religion_label.Location = new System.Drawing.Point(290, 63);
+            this.religion_label.Name = "religion_label";
+            this.religion_label.Size = new System.Drawing.Size(13, 13);
+            this.religion_label.TabIndex = 31;
+            this.religion_label.Text = "0";
+            // 
+            // religion_checkbox
+            // 
+            this.religion_checkbox.AutoSize = true;
+            this.religion_checkbox.Location = new System.Drawing.Point(227, 62);
+            this.religion_checkbox.Name = "religion_checkbox";
+            this.religion_checkbox.Size = new System.Drawing.Size(64, 17);
+            this.religion_checkbox.TabIndex = 30;
+            this.religion_checkbox.Text = "Religion";
+            this.religion_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // persuasion_checkbox
+            // 
+            this.persuasion_checkbox.AutoSize = true;
+            this.persuasion_checkbox.Location = new System.Drawing.Point(227, 39);
+            this.persuasion_checkbox.Name = "persuasion_checkbox";
+            this.persuasion_checkbox.Size = new System.Drawing.Size(78, 17);
+            this.persuasion_checkbox.TabIndex = 29;
+            this.persuasion_checkbox.Text = "Persuasion";
+            this.persuasion_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // persuasion_label
+            // 
+            this.persuasion_label.AutoSize = true;
+            this.persuasion_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.persuasion_label.Location = new System.Drawing.Point(308, 40);
+            this.persuasion_label.Name = "persuasion_label";
+            this.persuasion_label.Size = new System.Drawing.Size(13, 13);
+            this.persuasion_label.TabIndex = 28;
+            this.persuasion_label.Text = "0";
+            // 
+            // performance_checkbox
+            // 
+            this.performance_checkbox.AutoSize = true;
+            this.performance_checkbox.Location = new System.Drawing.Point(227, 16);
+            this.performance_checkbox.Name = "performance_checkbox";
+            this.performance_checkbox.Size = new System.Drawing.Size(86, 17);
+            this.performance_checkbox.TabIndex = 27;
+            this.performance_checkbox.Text = "Performance";
+            this.performance_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // performance_label
+            // 
+            this.performance_label.AutoSize = true;
+            this.performance_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.performance_label.Location = new System.Drawing.Point(312, 17);
+            this.performance_label.Name = "performance_label";
+            this.performance_label.Size = new System.Drawing.Size(13, 13);
+            this.performance_label.TabIndex = 26;
+            this.performance_label.Text = "0";
+            // 
+            // perception_label
+            // 
+            this.perception_label.AutoSize = true;
+            this.perception_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.perception_label.Location = new System.Drawing.Point(199, 132);
+            this.perception_label.Name = "perception_label";
+            this.perception_label.Size = new System.Drawing.Size(13, 13);
+            this.perception_label.TabIndex = 25;
+            this.perception_label.Text = "0";
+            // 
+            // perception_checkbox
+            // 
+            this.perception_checkbox.AutoSize = true;
+            this.perception_checkbox.Location = new System.Drawing.Point(127, 131);
+            this.perception_checkbox.Name = "perception_checkbox";
+            this.perception_checkbox.Size = new System.Drawing.Size(77, 17);
+            this.perception_checkbox.TabIndex = 24;
+            this.perception_checkbox.Text = "Perception";
+            this.perception_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // nature_label
+            // 
+            this.nature_label.AutoSize = true;
+            this.nature_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.nature_label.Location = new System.Drawing.Point(183, 109);
+            this.nature_label.Name = "nature_label";
+            this.nature_label.Size = new System.Drawing.Size(13, 13);
+            this.nature_label.TabIndex = 23;
+            this.nature_label.Text = "0";
+            // 
+            // nature_checkbox
+            // 
+            this.nature_checkbox.AutoSize = true;
+            this.nature_checkbox.Location = new System.Drawing.Point(127, 108);
+            this.nature_checkbox.Name = "nature_checkbox";
+            this.nature_checkbox.Size = new System.Drawing.Size(58, 17);
+            this.nature_checkbox.TabIndex = 22;
+            this.nature_checkbox.Text = "Nature";
+            this.nature_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // medicine_label
+            // 
+            this.medicine_label.AutoSize = true;
+            this.medicine_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.medicine_label.Location = new System.Drawing.Point(190, 86);
+            this.medicine_label.Name = "medicine_label";
+            this.medicine_label.Size = new System.Drawing.Size(13, 13);
+            this.medicine_label.TabIndex = 21;
+            this.medicine_label.Text = "0";
+            // 
+            // medicine_checkbox
+            // 
+            this.medicine_checkbox.AutoSize = true;
+            this.medicine_checkbox.Location = new System.Drawing.Point(127, 85);
+            this.medicine_checkbox.Name = "medicine_checkbox";
+            this.medicine_checkbox.Size = new System.Drawing.Size(69, 17);
+            this.medicine_checkbox.TabIndex = 20;
+            this.medicine_checkbox.Text = "Medicine";
+            this.medicine_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // investigation_label
+            // 
+            this.investigation_label.AutoSize = true;
+            this.investigation_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.investigation_label.Location = new System.Drawing.Point(212, 65);
+            this.investigation_label.Name = "investigation_label";
+            this.investigation_label.Size = new System.Drawing.Size(13, 13);
+            this.investigation_label.TabIndex = 19;
+            this.investigation_label.Text = "0";
+            // 
+            // investigation_checkbox
+            // 
+            this.investigation_checkbox.AutoSize = true;
+            this.investigation_checkbox.Location = new System.Drawing.Point(127, 62);
+            this.investigation_checkbox.Name = "investigation_checkbox";
+            this.investigation_checkbox.Size = new System.Drawing.Size(86, 17);
+            this.investigation_checkbox.TabIndex = 18;
+            this.investigation_checkbox.Text = "Investigation";
+            this.investigation_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // intimidation_checkbox
+            // 
+            this.intimidation_checkbox.AutoSize = true;
+            this.intimidation_checkbox.Location = new System.Drawing.Point(127, 39);
+            this.intimidation_checkbox.Name = "intimidation_checkbox";
+            this.intimidation_checkbox.Size = new System.Drawing.Size(79, 17);
+            this.intimidation_checkbox.TabIndex = 16;
+            this.intimidation_checkbox.Text = "Intimidation";
+            this.intimidation_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // intimidation_label
+            // 
+            this.intimidation_label.AutoSize = true;
+            this.intimidation_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.intimidation_label.Location = new System.Drawing.Point(208, 40);
+            this.intimidation_label.Name = "intimidation_label";
+            this.intimidation_label.Size = new System.Drawing.Size(13, 13);
+            this.intimidation_label.TabIndex = 15;
+            this.intimidation_label.Text = "0";
+            // 
+            // insight_checkbox
+            // 
+            this.insight_checkbox.AutoSize = true;
+            this.insight_checkbox.Location = new System.Drawing.Point(127, 16);
+            this.insight_checkbox.Name = "insight_checkbox";
+            this.insight_checkbox.Size = new System.Drawing.Size(57, 17);
+            this.insight_checkbox.TabIndex = 14;
+            this.insight_checkbox.Text = "Insight";
+            this.insight_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // insight_label
+            // 
+            this.insight_label.AutoSize = true;
+            this.insight_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.insight_label.Location = new System.Drawing.Point(183, 17);
+            this.insight_label.Name = "insight_label";
+            this.insight_label.Size = new System.Drawing.Size(13, 13);
+            this.insight_label.TabIndex = 13;
+            this.insight_label.Text = "0";
+            // 
+            // history_label
+            // 
+            this.history_label.AutoSize = true;
+            this.history_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.history_label.Location = new System.Drawing.Point(64, 135);
+            this.history_label.Name = "history_label";
+            this.history_label.Size = new System.Drawing.Size(13, 13);
+            this.history_label.TabIndex = 12;
+            this.history_label.Text = "0";
+            // 
+            // history_checkbox
+            // 
+            this.history_checkbox.AutoSize = true;
+            this.history_checkbox.Location = new System.Drawing.Point(6, 134);
+            this.history_checkbox.Name = "history_checkbox";
+            this.history_checkbox.Size = new System.Drawing.Size(58, 17);
+            this.history_checkbox.TabIndex = 11;
+            this.history_checkbox.Text = "History";
+            this.history_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // deception_label
+            // 
+            this.deception_label.AutoSize = true;
+            this.deception_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.deception_label.Location = new System.Drawing.Point(79, 112);
+            this.deception_label.Name = "deception_label";
+            this.deception_label.Size = new System.Drawing.Size(13, 13);
+            this.deception_label.TabIndex = 10;
+            this.deception_label.Text = "0";
+            // 
+            // deception_checkbox
+            // 
+            this.deception_checkbox.AutoSize = true;
+            this.deception_checkbox.Location = new System.Drawing.Point(6, 111);
+            this.deception_checkbox.Name = "deception_checkbox";
+            this.deception_checkbox.Size = new System.Drawing.Size(75, 17);
+            this.deception_checkbox.TabIndex = 9;
+            this.deception_checkbox.Text = "Deception";
+            this.deception_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // athletics_label
+            // 
+            this.athletics_label.AutoSize = true;
+            this.athletics_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.athletics_label.Location = new System.Drawing.Point(69, 89);
+            this.athletics_label.Name = "athletics_label";
+            this.athletics_label.Size = new System.Drawing.Size(13, 13);
+            this.athletics_label.TabIndex = 8;
+            this.athletics_label.Text = "0";
+            // 
+            // athletics_checkbox
+            // 
+            this.athletics_checkbox.AutoSize = true;
+            this.athletics_checkbox.Location = new System.Drawing.Point(6, 88);
+            this.athletics_checkbox.Name = "athletics_checkbox";
+            this.athletics_checkbox.Size = new System.Drawing.Size(66, 17);
+            this.athletics_checkbox.TabIndex = 7;
+            this.athletics_checkbox.Text = "Athletics";
+            this.athletics_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // arcana_label
+            // 
+            this.arcana_label.AutoSize = true;
+            this.arcana_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.arcana_label.Location = new System.Drawing.Point(64, 66);
+            this.arcana_label.Name = "arcana_label";
+            this.arcana_label.Size = new System.Drawing.Size(13, 13);
+            this.arcana_label.TabIndex = 6;
+            this.arcana_label.Text = "0";
+            // 
+            // arcana_checkbox
+            // 
+            this.arcana_checkbox.AutoSize = true;
+            this.arcana_checkbox.Location = new System.Drawing.Point(6, 65);
+            this.arcana_checkbox.Name = "arcana_checkbox";
+            this.arcana_checkbox.Size = new System.Drawing.Size(60, 17);
+            this.arcana_checkbox.TabIndex = 5;
+            this.arcana_checkbox.Text = "Arcana";
+            this.arcana_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // animal_label
+            // 
+            this.animal_label.AutoSize = true;
+            this.animal_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.animal_label.Location = new System.Drawing.Point(108, 43);
+            this.animal_label.Name = "animal_label";
+            this.animal_label.Size = new System.Drawing.Size(13, 13);
+            this.animal_label.TabIndex = 4;
+            this.animal_label.Text = "0";
+            // 
+            // animal_checkbox
+            // 
+            this.animal_checkbox.AutoSize = true;
+            this.animal_checkbox.Location = new System.Drawing.Point(6, 42);
+            this.animal_checkbox.Name = "animal_checkbox";
+            this.animal_checkbox.Size = new System.Drawing.Size(102, 17);
+            this.animal_checkbox.TabIndex = 3;
+            this.animal_checkbox.Text = "Animal Handling";
+            this.animal_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // acro_checkbox
+            // 
+            this.acro_checkbox.AutoSize = true;
+            this.acro_checkbox.Location = new System.Drawing.Point(6, 19);
+            this.acro_checkbox.Name = "acro_checkbox";
+            this.acro_checkbox.Size = new System.Drawing.Size(76, 17);
+            this.acro_checkbox.TabIndex = 1;
+            this.acro_checkbox.Text = "Acrobatics";
+            this.acro_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // acro_label
+            // 
+            this.acro_label.AutoSize = true;
+            this.acro_label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.acro_label.Location = new System.Drawing.Point(79, 20);
+            this.acro_label.Name = "acro_label";
+            this.acro_label.Size = new System.Drawing.Size(13, 13);
+            this.acro_label.TabIndex = 0;
+            this.acro_label.Text = "0";
             // 
             // groupBox5
             // 
@@ -1028,620 +1645,13 @@
             this.reference_page.Text = "Reference";
             this.reference_page.UseVisualStyleBackColor = true;
             // 
-            // acro_label
-            // 
-            this.acro_label.AutoSize = true;
-            this.acro_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.acro_label.Location = new System.Drawing.Point(79, 20);
-            this.acro_label.Name = "acro_label";
-            this.acro_label.Size = new System.Drawing.Size(13, 13);
-            this.acro_label.TabIndex = 0;
-            this.acro_label.Text = "0";
-            // 
-            // acro_checkbox
-            // 
-            this.acro_checkbox.AutoSize = true;
-            this.acro_checkbox.Location = new System.Drawing.Point(6, 19);
-            this.acro_checkbox.Name = "acro_checkbox";
-            this.acro_checkbox.Size = new System.Drawing.Size(76, 17);
-            this.acro_checkbox.TabIndex = 1;
-            this.acro_checkbox.Text = "Acrobatics";
-            this.acro_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // animal_checkbox
-            // 
-            this.animal_checkbox.AutoSize = true;
-            this.animal_checkbox.Location = new System.Drawing.Point(6, 42);
-            this.animal_checkbox.Name = "animal_checkbox";
-            this.animal_checkbox.Size = new System.Drawing.Size(102, 17);
-            this.animal_checkbox.TabIndex = 3;
-            this.animal_checkbox.Text = "Animal Handling";
-            this.animal_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // animal_label
-            // 
-            this.animal_label.AutoSize = true;
-            this.animal_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.animal_label.Location = new System.Drawing.Point(108, 43);
-            this.animal_label.Name = "animal_label";
-            this.animal_label.Size = new System.Drawing.Size(13, 13);
-            this.animal_label.TabIndex = 4;
-            this.animal_label.Text = "0";
-            // 
-            // arcana_label
-            // 
-            this.arcana_label.AutoSize = true;
-            this.arcana_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.arcana_label.Location = new System.Drawing.Point(64, 66);
-            this.arcana_label.Name = "arcana_label";
-            this.arcana_label.Size = new System.Drawing.Size(13, 13);
-            this.arcana_label.TabIndex = 6;
-            this.arcana_label.Text = "0";
-            // 
-            // arcana_checkbox
-            // 
-            this.arcana_checkbox.AutoSize = true;
-            this.arcana_checkbox.Location = new System.Drawing.Point(6, 65);
-            this.arcana_checkbox.Name = "arcana_checkbox";
-            this.arcana_checkbox.Size = new System.Drawing.Size(60, 17);
-            this.arcana_checkbox.TabIndex = 5;
-            this.arcana_checkbox.Text = "Arcana";
-            this.arcana_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // athletics_label
-            // 
-            this.athletics_label.AutoSize = true;
-            this.athletics_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.athletics_label.Location = new System.Drawing.Point(69, 89);
-            this.athletics_label.Name = "athletics_label";
-            this.athletics_label.Size = new System.Drawing.Size(13, 13);
-            this.athletics_label.TabIndex = 8;
-            this.athletics_label.Text = "0";
-            // 
-            // athletics_checkbox
-            // 
-            this.athletics_checkbox.AutoSize = true;
-            this.athletics_checkbox.Location = new System.Drawing.Point(6, 88);
-            this.athletics_checkbox.Name = "athletics_checkbox";
-            this.athletics_checkbox.Size = new System.Drawing.Size(66, 17);
-            this.athletics_checkbox.TabIndex = 7;
-            this.athletics_checkbox.Text = "Athletics";
-            this.athletics_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // deception_label
-            // 
-            this.deception_label.AutoSize = true;
-            this.deception_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.deception_label.Location = new System.Drawing.Point(79, 112);
-            this.deception_label.Name = "deception_label";
-            this.deception_label.Size = new System.Drawing.Size(13, 13);
-            this.deception_label.TabIndex = 10;
-            this.deception_label.Text = "0";
-            // 
-            // deception_checkbox
-            // 
-            this.deception_checkbox.AutoSize = true;
-            this.deception_checkbox.Location = new System.Drawing.Point(6, 111);
-            this.deception_checkbox.Name = "deception_checkbox";
-            this.deception_checkbox.Size = new System.Drawing.Size(75, 17);
-            this.deception_checkbox.TabIndex = 9;
-            this.deception_checkbox.Text = "Deception";
-            this.deception_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // history_label
-            // 
-            this.history_label.AutoSize = true;
-            this.history_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.history_label.Location = new System.Drawing.Point(64, 135);
-            this.history_label.Name = "history_label";
-            this.history_label.Size = new System.Drawing.Size(13, 13);
-            this.history_label.TabIndex = 12;
-            this.history_label.Text = "0";
-            // 
-            // history_checkbox
-            // 
-            this.history_checkbox.AutoSize = true;
-            this.history_checkbox.Location = new System.Drawing.Point(6, 134);
-            this.history_checkbox.Name = "history_checkbox";
-            this.history_checkbox.Size = new System.Drawing.Size(58, 17);
-            this.history_checkbox.TabIndex = 11;
-            this.history_checkbox.Text = "History";
-            this.history_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // perception_label
-            // 
-            this.perception_label.AutoSize = true;
-            this.perception_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.perception_label.Location = new System.Drawing.Point(199, 132);
-            this.perception_label.Name = "perception_label";
-            this.perception_label.Size = new System.Drawing.Size(13, 13);
-            this.perception_label.TabIndex = 25;
-            this.perception_label.Text = "0";
-            // 
-            // perception_checkbox
-            // 
-            this.perception_checkbox.AutoSize = true;
-            this.perception_checkbox.Location = new System.Drawing.Point(127, 131);
-            this.perception_checkbox.Name = "perception_checkbox";
-            this.perception_checkbox.Size = new System.Drawing.Size(77, 17);
-            this.perception_checkbox.TabIndex = 24;
-            this.perception_checkbox.Text = "Perception";
-            this.perception_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // nature_label
-            // 
-            this.nature_label.AutoSize = true;
-            this.nature_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.nature_label.Location = new System.Drawing.Point(183, 109);
-            this.nature_label.Name = "nature_label";
-            this.nature_label.Size = new System.Drawing.Size(13, 13);
-            this.nature_label.TabIndex = 23;
-            this.nature_label.Text = "0";
-            // 
-            // nature_checkbox
-            // 
-            this.nature_checkbox.AutoSize = true;
-            this.nature_checkbox.Location = new System.Drawing.Point(127, 108);
-            this.nature_checkbox.Name = "nature_checkbox";
-            this.nature_checkbox.Size = new System.Drawing.Size(58, 17);
-            this.nature_checkbox.TabIndex = 22;
-            this.nature_checkbox.Text = "Nature";
-            this.nature_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // medicine_label
-            // 
-            this.medicine_label.AutoSize = true;
-            this.medicine_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.medicine_label.Location = new System.Drawing.Point(190, 86);
-            this.medicine_label.Name = "medicine_label";
-            this.medicine_label.Size = new System.Drawing.Size(13, 13);
-            this.medicine_label.TabIndex = 21;
-            this.medicine_label.Text = "0";
-            // 
-            // medicine_checkbox
-            // 
-            this.medicine_checkbox.AutoSize = true;
-            this.medicine_checkbox.Location = new System.Drawing.Point(127, 85);
-            this.medicine_checkbox.Name = "medicine_checkbox";
-            this.medicine_checkbox.Size = new System.Drawing.Size(69, 17);
-            this.medicine_checkbox.TabIndex = 20;
-            this.medicine_checkbox.Text = "Medicine";
-            this.medicine_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // investigation_label
-            // 
-            this.investigation_label.AutoSize = true;
-            this.investigation_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.investigation_label.Location = new System.Drawing.Point(212, 65);
-            this.investigation_label.Name = "investigation_label";
-            this.investigation_label.Size = new System.Drawing.Size(13, 13);
-            this.investigation_label.TabIndex = 19;
-            this.investigation_label.Text = "0";
-            // 
-            // investigation_checkbox
-            // 
-            this.investigation_checkbox.AutoSize = true;
-            this.investigation_checkbox.Location = new System.Drawing.Point(127, 62);
-            this.investigation_checkbox.Name = "investigation_checkbox";
-            this.investigation_checkbox.Size = new System.Drawing.Size(86, 17);
-            this.investigation_checkbox.TabIndex = 18;
-            this.investigation_checkbox.Text = "Investigation";
-            this.investigation_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // intimidation_checkbox
-            // 
-            this.intimidation_checkbox.AutoSize = true;
-            this.intimidation_checkbox.Location = new System.Drawing.Point(127, 39);
-            this.intimidation_checkbox.Name = "intimidation_checkbox";
-            this.intimidation_checkbox.Size = new System.Drawing.Size(79, 17);
-            this.intimidation_checkbox.TabIndex = 16;
-            this.intimidation_checkbox.Text = "Intimidation";
-            this.intimidation_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // intimidation_label
-            // 
-            this.intimidation_label.AutoSize = true;
-            this.intimidation_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.intimidation_label.Location = new System.Drawing.Point(208, 40);
-            this.intimidation_label.Name = "intimidation_label";
-            this.intimidation_label.Size = new System.Drawing.Size(13, 13);
-            this.intimidation_label.TabIndex = 15;
-            this.intimidation_label.Text = "0";
-            // 
-            // insight_checkbox
-            // 
-            this.insight_checkbox.AutoSize = true;
-            this.insight_checkbox.Location = new System.Drawing.Point(127, 16);
-            this.insight_checkbox.Name = "insight_checkbox";
-            this.insight_checkbox.Size = new System.Drawing.Size(57, 17);
-            this.insight_checkbox.TabIndex = 14;
-            this.insight_checkbox.Text = "Insight";
-            this.insight_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // insight_label
-            // 
-            this.insight_label.AutoSize = true;
-            this.insight_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.insight_label.Location = new System.Drawing.Point(183, 17);
-            this.insight_label.Name = "insight_label";
-            this.insight_label.Size = new System.Drawing.Size(13, 13);
-            this.insight_label.TabIndex = 13;
-            this.insight_label.Text = "0";
-            // 
-            // survival_label
-            // 
-            this.survival_label.AutoSize = true;
-            this.survival_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.survival_label.Location = new System.Drawing.Point(287, 132);
-            this.survival_label.Name = "survival_label";
-            this.survival_label.Size = new System.Drawing.Size(13, 13);
-            this.survival_label.TabIndex = 37;
-            this.survival_label.Text = "0";
-            // 
-            // survival_checkbox
-            // 
-            this.survival_checkbox.AutoSize = true;
-            this.survival_checkbox.Location = new System.Drawing.Point(227, 131);
-            this.survival_checkbox.Name = "survival_checkbox";
-            this.survival_checkbox.Size = new System.Drawing.Size(64, 17);
-            this.survival_checkbox.TabIndex = 36;
-            this.survival_checkbox.Text = "Survival";
-            this.survival_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // stealth_label
-            // 
-            this.stealth_label.AutoSize = true;
-            this.stealth_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.stealth_label.Location = new System.Drawing.Point(283, 109);
-            this.stealth_label.Name = "stealth_label";
-            this.stealth_label.Size = new System.Drawing.Size(13, 13);
-            this.stealth_label.TabIndex = 35;
-            this.stealth_label.Text = "0";
-            // 
-            // stealth_checkbox
-            // 
-            this.stealth_checkbox.AutoSize = true;
-            this.stealth_checkbox.Location = new System.Drawing.Point(227, 108);
-            this.stealth_checkbox.Name = "stealth_checkbox";
-            this.stealth_checkbox.Size = new System.Drawing.Size(59, 17);
-            this.stealth_checkbox.TabIndex = 34;
-            this.stealth_checkbox.Text = "Stealth";
-            this.stealth_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // sleightofhand_label
-            // 
-            this.sleightofhand_label.AutoSize = true;
-            this.sleightofhand_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.sleightofhand_label.Location = new System.Drawing.Point(322, 85);
-            this.sleightofhand_label.Name = "sleightofhand_label";
-            this.sleightofhand_label.Size = new System.Drawing.Size(13, 13);
-            this.sleightofhand_label.TabIndex = 33;
-            this.sleightofhand_label.Text = "0";
-            // 
-            // sleightofhand_checkbox
-            // 
-            this.sleightofhand_checkbox.AutoSize = true;
-            this.sleightofhand_checkbox.Location = new System.Drawing.Point(227, 85);
-            this.sleightofhand_checkbox.Name = "sleightofhand_checkbox";
-            this.sleightofhand_checkbox.Size = new System.Drawing.Size(99, 17);
-            this.sleightofhand_checkbox.TabIndex = 32;
-            this.sleightofhand_checkbox.Text = "Sleight of Hand";
-            this.sleightofhand_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // religion_label
-            // 
-            this.religion_label.AutoSize = true;
-            this.religion_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.religion_label.Location = new System.Drawing.Point(290, 63);
-            this.religion_label.Name = "religion_label";
-            this.religion_label.Size = new System.Drawing.Size(13, 13);
-            this.religion_label.TabIndex = 31;
-            this.religion_label.Text = "0";
-            // 
-            // religion_checkbox
-            // 
-            this.religion_checkbox.AutoSize = true;
-            this.religion_checkbox.Location = new System.Drawing.Point(227, 62);
-            this.religion_checkbox.Name = "religion_checkbox";
-            this.religion_checkbox.Size = new System.Drawing.Size(64, 17);
-            this.religion_checkbox.TabIndex = 30;
-            this.religion_checkbox.Text = "Religion";
-            this.religion_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // persuasion_checkbox
-            // 
-            this.persuasion_checkbox.AutoSize = true;
-            this.persuasion_checkbox.Location = new System.Drawing.Point(227, 39);
-            this.persuasion_checkbox.Name = "persuasion_checkbox";
-            this.persuasion_checkbox.Size = new System.Drawing.Size(78, 17);
-            this.persuasion_checkbox.TabIndex = 29;
-            this.persuasion_checkbox.Text = "Persuasion";
-            this.persuasion_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // persuasion_label
-            // 
-            this.persuasion_label.AutoSize = true;
-            this.persuasion_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.persuasion_label.Location = new System.Drawing.Point(308, 40);
-            this.persuasion_label.Name = "persuasion_label";
-            this.persuasion_label.Size = new System.Drawing.Size(13, 13);
-            this.persuasion_label.TabIndex = 28;
-            this.persuasion_label.Text = "0";
-            // 
-            // performance_checkbox
-            // 
-            this.performance_checkbox.AutoSize = true;
-            this.performance_checkbox.Location = new System.Drawing.Point(227, 16);
-            this.performance_checkbox.Name = "performance_checkbox";
-            this.performance_checkbox.Size = new System.Drawing.Size(86, 17);
-            this.performance_checkbox.TabIndex = 27;
-            this.performance_checkbox.Text = "Performance";
-            this.performance_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // performance_label
-            // 
-            this.performance_label.AutoSize = true;
-            this.performance_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.performance_label.Location = new System.Drawing.Point(312, 17);
-            this.performance_label.Name = "performance_label";
-            this.performance_label.Size = new System.Drawing.Size(13, 13);
-            this.performance_label.TabIndex = 26;
-            this.performance_label.Text = "0";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.char_save_label);
-            this.groupBox7.Controls.Add(this.char_save_checkbox);
-            this.groupBox7.Controls.Add(this.wisd_save_label);
-            this.groupBox7.Controls.Add(this.wis_save_checkbox);
-            this.groupBox7.Controls.Add(this.intel_save_label);
-            this.groupBox7.Controls.Add(this.intel_save_checkbox);
-            this.groupBox7.Controls.Add(this.const_save_label);
-            this.groupBox7.Controls.Add(this.const_save_checkbox);
-            this.groupBox7.Controls.Add(this.dex_save_label);
-            this.groupBox7.Controls.Add(this.dex_save_checkbox);
-            this.groupBox7.Controls.Add(this.str_save_checkbox);
-            this.groupBox7.Controls.Add(this.strength_save_label);
-            this.groupBox7.Location = new System.Drawing.Point(356, 262);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(131, 155);
-            this.groupBox7.TabIndex = 32;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Saving Throws";
-            // 
-            // char_save_label
-            // 
-            this.char_save_label.AutoSize = true;
-            this.char_save_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.char_save_label.Location = new System.Drawing.Point(76, 133);
-            this.char_save_label.Name = "char_save_label";
-            this.char_save_label.Size = new System.Drawing.Size(13, 13);
-            this.char_save_label.TabIndex = 24;
-            this.char_save_label.Text = "0";
-            // 
-            // char_save_checkbox
-            // 
-            this.char_save_checkbox.AutoSize = true;
-            this.char_save_checkbox.Location = new System.Drawing.Point(9, 132);
-            this.char_save_checkbox.Name = "char_save_checkbox";
-            this.char_save_checkbox.Size = new System.Drawing.Size(69, 17);
-            this.char_save_checkbox.TabIndex = 23;
-            this.char_save_checkbox.Text = "Charisma";
-            this.char_save_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // wisd_save_label
-            // 
-            this.wisd_save_label.AutoSize = true;
-            this.wisd_save_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.wisd_save_label.Location = new System.Drawing.Point(71, 111);
-            this.wisd_save_label.Name = "wisd_save_label";
-            this.wisd_save_label.Size = new System.Drawing.Size(13, 13);
-            this.wisd_save_label.TabIndex = 22;
-            this.wisd_save_label.Text = "0";
-            // 
-            // wis_save_checkbox
-            // 
-            this.wis_save_checkbox.AutoSize = true;
-            this.wis_save_checkbox.Location = new System.Drawing.Point(9, 109);
-            this.wis_save_checkbox.Name = "wis_save_checkbox";
-            this.wis_save_checkbox.Size = new System.Drawing.Size(64, 17);
-            this.wis_save_checkbox.TabIndex = 21;
-            this.wis_save_checkbox.Text = "Wisdom";
-            this.wis_save_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // intel_save_label
-            // 
-            this.intel_save_label.AutoSize = true;
-            this.intel_save_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.intel_save_label.Location = new System.Drawing.Point(92, 88);
-            this.intel_save_label.Name = "intel_save_label";
-            this.intel_save_label.Size = new System.Drawing.Size(13, 13);
-            this.intel_save_label.TabIndex = 20;
-            this.intel_save_label.Text = "0";
-            // 
-            // intel_save_checkbox
-            // 
-            this.intel_save_checkbox.AutoSize = true;
-            this.intel_save_checkbox.Location = new System.Drawing.Point(9, 86);
-            this.intel_save_checkbox.Name = "intel_save_checkbox";
-            this.intel_save_checkbox.Size = new System.Drawing.Size(80, 17);
-            this.intel_save_checkbox.TabIndex = 19;
-            this.intel_save_checkbox.Text = "Intelligence";
-            this.intel_save_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // const_save_label
-            // 
-            this.const_save_label.AutoSize = true;
-            this.const_save_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.const_save_label.Location = new System.Drawing.Point(92, 66);
-            this.const_save_label.Name = "const_save_label";
-            this.const_save_label.Size = new System.Drawing.Size(13, 13);
-            this.const_save_label.TabIndex = 18;
-            this.const_save_label.Text = "0";
-            // 
-            // const_save_checkbox
-            // 
-            this.const_save_checkbox.AutoSize = true;
-            this.const_save_checkbox.Location = new System.Drawing.Point(9, 63);
-            this.const_save_checkbox.Name = "const_save_checkbox";
-            this.const_save_checkbox.Size = new System.Drawing.Size(81, 17);
-            this.const_save_checkbox.TabIndex = 17;
-            this.const_save_checkbox.Text = "Constitution";
-            this.const_save_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // dex_save_label
-            // 
-            this.dex_save_label.AutoSize = true;
-            this.dex_save_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.dex_save_label.Location = new System.Drawing.Point(83, 42);
-            this.dex_save_label.Name = "dex_save_label";
-            this.dex_save_label.Size = new System.Drawing.Size(13, 13);
-            this.dex_save_label.TabIndex = 16;
-            this.dex_save_label.Text = "0";
-            // 
-            // dex_save_checkbox
-            // 
-            this.dex_save_checkbox.AutoSize = true;
-            this.dex_save_checkbox.Location = new System.Drawing.Point(9, 40);
-            this.dex_save_checkbox.Name = "dex_save_checkbox";
-            this.dex_save_checkbox.Size = new System.Drawing.Size(67, 17);
-            this.dex_save_checkbox.TabIndex = 15;
-            this.dex_save_checkbox.Text = "Dexterity";
-            this.dex_save_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // str_save_checkbox
-            // 
-            this.str_save_checkbox.AutoSize = true;
-            this.str_save_checkbox.Location = new System.Drawing.Point(9, 17);
-            this.str_save_checkbox.Name = "str_save_checkbox";
-            this.str_save_checkbox.Size = new System.Drawing.Size(66, 17);
-            this.str_save_checkbox.TabIndex = 14;
-            this.str_save_checkbox.Text = "Strength";
-            this.str_save_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // strength_save_label
-            // 
-            this.strength_save_label.AutoSize = true;
-            this.strength_save_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.strength_save_label.Location = new System.Drawing.Point(82, 18);
-            this.strength_save_label.Name = "strength_save_label";
-            this.strength_save_label.Size = new System.Drawing.Size(13, 13);
-            this.strength_save_label.TabIndex = 13;
-            this.strength_save_label.Text = "0";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.char_final_label);
-            this.groupBox8.Controls.Add(this.const_final_label);
-            this.groupBox8.Controls.Add(this.wis_final_label);
-            this.groupBox8.Controls.Add(this.dex_final_label);
-            this.groupBox8.Controls.Add(this.str_final_label);
-            this.groupBox8.Controls.Add(this.label34);
-            this.groupBox8.Controls.Add(this.label35);
-            this.groupBox8.Controls.Add(this.label36);
-            this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Controls.Add(this.label38);
-            this.groupBox8.Location = new System.Drawing.Point(493, 262);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(332, 59);
-            this.groupBox8.TabIndex = 33;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Ability Scores Final";
-            // 
-            // char_final_label
-            // 
-            this.char_final_label.AutoSize = true;
-            this.char_final_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.char_final_label.Location = new System.Drawing.Point(230, 16);
-            this.char_final_label.Name = "char_final_label";
-            this.char_final_label.Size = new System.Drawing.Size(13, 13);
-            this.char_final_label.TabIndex = 43;
-            this.char_final_label.Text = "0";
-            // 
-            // const_final_label
-            // 
-            this.const_final_label.AutoSize = true;
-            this.const_final_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.const_final_label.Location = new System.Drawing.Point(152, 16);
-            this.const_final_label.Name = "const_final_label";
-            this.const_final_label.Size = new System.Drawing.Size(13, 13);
-            this.const_final_label.TabIndex = 42;
-            this.const_final_label.Text = "0";
-            // 
-            // wis_final_label
-            // 
-            this.wis_final_label.AutoSize = true;
-            this.wis_final_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.wis_final_label.Location = new System.Drawing.Point(137, 42);
-            this.wis_final_label.Name = "wis_final_label";
-            this.wis_final_label.Size = new System.Drawing.Size(13, 13);
-            this.wis_final_label.TabIndex = 41;
-            this.wis_final_label.Text = "0";
-            // 
-            // dex_final_label
-            // 
-            this.dex_final_label.AutoSize = true;
-            this.dex_final_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.dex_final_label.Location = new System.Drawing.Point(62, 42);
-            this.dex_final_label.Name = "dex_final_label";
-            this.dex_final_label.Size = new System.Drawing.Size(13, 13);
-            this.dex_final_label.TabIndex = 40;
-            this.dex_final_label.Text = "0";
-            // 
-            // str_final_label
-            // 
-            this.str_final_label.AutoSize = true;
-            this.str_final_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.str_final_label.Location = new System.Drawing.Point(62, 16);
-            this.str_final_label.Name = "str_final_label";
-            this.str_final_label.Size = new System.Drawing.Size(13, 13);
-            this.str_final_label.TabIndex = 39;
-            this.str_final_label.Text = "0";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(171, 16);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(53, 13);
-            this.label34.TabIndex = 38;
-            this.label34.Text = "Charisma:";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(83, 42);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(48, 13);
-            this.label35.TabIndex = 37;
-            this.label35.Text = "Wisdom:";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(81, 16);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(65, 13);
-            this.label36.TabIndex = 36;
-            this.label36.Text = "Constitution:";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(5, 42);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(51, 13);
-            this.label37.TabIndex = 35;
-            this.label37.Text = "Dexterity:";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 16);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(50, 13);
-            this.label38.TabIndex = 34;
-            this.label38.Text = "Strength:";
+            // features_textbox
+            // 
+            this.features_textbox.Location = new System.Drawing.Point(493, 325);
+            this.features_textbox.Name = "features_textbox";
+            this.features_textbox.Size = new System.Drawing.Size(326, 92);
+            this.features_textbox.TabIndex = 34;
+            this.features_textbox.Text = "";
             // 
             // main_form
             // 
@@ -1653,6 +1663,10 @@
             this.Text = "RPG Helper";
             this.tabControl1.ResumeLayout(false);
             this.character_page.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -1675,10 +1689,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1817,6 +1827,7 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.RichTextBox features_textbox;
     }
 }
 
