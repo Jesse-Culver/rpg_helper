@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.character_page = new System.Windows.Forms.TabPage();
+            this.update_btn = new System.Windows.Forms.Button();
+            this.features_textbox = new System.Windows.Forms.RichTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.char_final_label = new System.Windows.Forms.Label();
             this.const_final_label = new System.Windows.Forms.Label();
@@ -160,7 +162,6 @@
             this.notes_page = new System.Windows.Forms.TabPage();
             this.npc_page = new System.Windows.Forms.TabPage();
             this.reference_page = new System.Windows.Forms.TabPage();
-            this.features_textbox = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -198,6 +199,7 @@
             // 
             // character_page
             // 
+            this.character_page.Controls.Add(this.update_btn);
             this.character_page.Controls.Add(this.features_textbox);
             this.character_page.Controls.Add(this.groupBox8);
             this.character_page.Controls.Add(this.groupBox7);
@@ -214,6 +216,24 @@
             this.character_page.TabIndex = 0;
             this.character_page.Text = "Character";
             this.character_page.UseVisualStyleBackColor = true;
+            // 
+            // update_btn
+            // 
+            this.update_btn.Location = new System.Drawing.Point(649, 6);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.Size = new System.Drawing.Size(75, 23);
+            this.update_btn.TabIndex = 35;
+            this.update_btn.Text = "Update";
+            this.update_btn.UseVisualStyleBackColor = true;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
+            // 
+            // features_textbox
+            // 
+            this.features_textbox.Location = new System.Drawing.Point(493, 325);
+            this.features_textbox.Name = "features_textbox";
+            this.features_textbox.Size = new System.Drawing.Size(326, 92);
+            this.features_textbox.TabIndex = 34;
+            this.features_textbox.Text = "";
             // 
             // groupBox8
             // 
@@ -363,6 +383,7 @@
             // char_save_checkbox
             // 
             this.char_save_checkbox.AutoSize = true;
+            this.char_save_checkbox.Enabled = false;
             this.char_save_checkbox.Location = new System.Drawing.Point(9, 132);
             this.char_save_checkbox.Name = "char_save_checkbox";
             this.char_save_checkbox.Size = new System.Drawing.Size(69, 17);
@@ -383,6 +404,7 @@
             // wis_save_checkbox
             // 
             this.wis_save_checkbox.AutoSize = true;
+            this.wis_save_checkbox.Enabled = false;
             this.wis_save_checkbox.Location = new System.Drawing.Point(9, 109);
             this.wis_save_checkbox.Name = "wis_save_checkbox";
             this.wis_save_checkbox.Size = new System.Drawing.Size(64, 17);
@@ -403,6 +425,7 @@
             // intel_save_checkbox
             // 
             this.intel_save_checkbox.AutoSize = true;
+            this.intel_save_checkbox.Enabled = false;
             this.intel_save_checkbox.Location = new System.Drawing.Point(9, 86);
             this.intel_save_checkbox.Name = "intel_save_checkbox";
             this.intel_save_checkbox.Size = new System.Drawing.Size(80, 17);
@@ -423,6 +446,7 @@
             // const_save_checkbox
             // 
             this.const_save_checkbox.AutoSize = true;
+            this.const_save_checkbox.Enabled = false;
             this.const_save_checkbox.Location = new System.Drawing.Point(9, 63);
             this.const_save_checkbox.Name = "const_save_checkbox";
             this.const_save_checkbox.Size = new System.Drawing.Size(81, 17);
@@ -443,6 +467,7 @@
             // dex_save_checkbox
             // 
             this.dex_save_checkbox.AutoSize = true;
+            this.dex_save_checkbox.Enabled = false;
             this.dex_save_checkbox.Location = new System.Drawing.Point(9, 40);
             this.dex_save_checkbox.Name = "dex_save_checkbox";
             this.dex_save_checkbox.Size = new System.Drawing.Size(67, 17);
@@ -453,6 +478,7 @@
             // str_save_checkbox
             // 
             this.str_save_checkbox.AutoSize = true;
+            this.str_save_checkbox.Enabled = false;
             this.str_save_checkbox.Location = new System.Drawing.Point(9, 17);
             this.str_save_checkbox.Name = "str_save_checkbox";
             this.str_save_checkbox.Size = new System.Drawing.Size(66, 17);
@@ -1444,7 +1470,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(819, 100);
+            this.groupBox1.Size = new System.Drawing.Size(637, 100);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -1523,7 +1549,6 @@
             this.race_dropdown.Name = "race_dropdown";
             this.race_dropdown.Size = new System.Drawing.Size(121, 21);
             this.race_dropdown.TabIndex = 15;
-            this.race_dropdown.SelectedValueChanged += new System.EventHandler(this.race_dropdown_SelectedValueChanged);
             // 
             // level_numberbox
             // 
@@ -1644,14 +1669,6 @@
             this.reference_page.TabIndex = 4;
             this.reference_page.Text = "Reference";
             this.reference_page.UseVisualStyleBackColor = true;
-            // 
-            // features_textbox
-            // 
-            this.features_textbox.Location = new System.Drawing.Point(493, 325);
-            this.features_textbox.Name = "features_textbox";
-            this.features_textbox.Size = new System.Drawing.Size(326, 92);
-            this.features_textbox.TabIndex = 34;
-            this.features_textbox.Text = "";
             // 
             // main_form
             // 
@@ -1828,6 +1845,7 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.RichTextBox features_textbox;
+        private System.Windows.Forms.Button update_btn;
     }
 }
 

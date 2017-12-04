@@ -27,57 +27,66 @@ namespace rpg_helper
             alignment_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        private void race_dropdown_SelectedValueChanged(object sender, EventArgs e)
+        /**********
+         * Begin Character Tab Functions
+         **********/
+        private void update_btn_Click(object sender, EventArgs e)
         {
-           UpdateCharacterSheet();
+            UpdateCharacterSheet();
         }
-
         private void UpdateCharacterSheet()
         {
             //Reset values first
             //Ability Modifiers
-            str_abm_label.ResetText();
-            dex_abm_label.ResetText();
-            const_abm_label.ResetText();
-            wis_abm_label.ResetText();
-            char_abm_label.ResetText();
-            proficiency_abm_label.ResetText();
-            initative_abm_label.ResetText();
-            speed_abm_label.ResetText();
+            str_abm_label.Text = "0";
+            dex_abm_label.Text = "0";
+            const_abm_label.Text = "0";
+            wis_abm_label.Text = "0";
+            char_abm_label.Text = "0";
+            proficiency_abm_label.Text = "0";
+            initative_abm_label.Text = "0";
+            speed_abm_label.Text = "0";
             //Ability Scores Final
-            char_final_label.ResetText();
-            wis_final_label.ResetText();
-            const_final_label.ResetText();
-            dex_final_label.ResetText();
-            str_final_label.ResetText();
+            char_final_label.Text = "0";
+            wis_final_label.Text = "0";
+            const_final_label.Text = "0";
+            dex_final_label.Text = "0";
+            str_final_label.Text = "0";
             //Skills
-            acro_label.ResetText();
-            animal_label.ResetText();
-            arcana_label.ResetText();
-            athletics_label.ResetText();
-            deception_label.ResetText();
-            history_label.ResetText();
-            insight_label.ResetText();
-            intimidation_label.ResetText();
-            investigation_label.ResetText();
-            medicine_label.ResetText();
-            nature_label.ResetText();
-            perception_label.ResetText();
-            performance_label.ResetText();
-            persuasion_label.ResetText();
-            religion_label.ResetText();
-            sleightofhand_label.ResetText();
-            stealth_label.ResetText();
-            survival_label.ResetText();
+            acro_label.Text = "0";
+            animal_label.Text = "0";
+            arcana_label.Text = "0";
+            athletics_label.Text = "0";
+            deception_label.Text = "0";
+            history_label.Text = "0";
+            insight_label.Text = "0";
+            intimidation_label.Text = "0";
+            investigation_label.Text = "0";
+            medicine_label.Text = "0";
+            nature_label.Text = "0";
+            perception_label.Text = "0";
+            performance_label.Text = "0";
+            persuasion_label.Text = "0";
+            religion_label.Text = "0";
+            sleightofhand_label.Text = "0";
+            stealth_label.Text = "0";
+            survival_label.Text = "0";
             //Saving Throws
-            strength_save_label.ResetText();
-            dex_save_label.ResetText();
-            const_save_label.ResetText();
-            intel_save_label.ResetText();
-            wisd_save_label.ResetText();
-            char_save_label.ResetText();
-
+            strength_save_label.Text = "0";
+            dex_save_label.Text = "0";
+            const_save_label.Text = "0";
+            intel_save_label.Text = "0";
+            wisd_save_label.Text = "0";
+            char_save_label.Text = "0";
+            wis_save_checkbox.Checked = false;
+            intel_save_checkbox.Checked = false;
+            dex_save_checkbox.Checked = false;
+            str_save_checkbox.Checked = false;
+            const_save_checkbox.Checked = false;
+            char_save_checkbox.Checked = false;
+            //Abilities
             features_textbox.ResetText();
+            
 
             //Temp variables
             int strength = Convert.ToInt32(str_abs_numbox.Value);
@@ -141,15 +150,27 @@ namespace rpg_helper
             {
                 //Cleric
                 case 0:
+                    hitdie_label.Text = "d8";
+                    wis_save_checkbox.Checked = true;
+                    char_save_checkbox.Checked = true;
                     break;
                 //Fighter
                 case 1:
+                    hitdie_label.Text = "d10";
+                    str_save_checkbox.Checked = true;
+                    const_save_checkbox.Checked = true;
                     break;
                 //Rogue
                 case 2:
+                    hitdie_label.Text = "d8";
+                    dex_save_checkbox.Checked = true;
+                    intel_save_checkbox.Checked = true;
                     break;
                 //Wizard
                 case 3:
+                    hitdie_label.Text = "d6";
+                    wis_save_checkbox.Checked = true;
+                    intel_save_checkbox.Checked = true;
                     break;
                 default:
                     break;
