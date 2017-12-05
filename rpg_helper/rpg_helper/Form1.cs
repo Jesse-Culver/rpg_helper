@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace rpg_helper
 {
     public partial class main_form : Form
     {
+        Image map;
+
+        
+
         public main_form()
         {
             InitializeComponent();
@@ -206,6 +211,64 @@ namespace rpg_helper
             wis_final_label.Text = wisdom.ToString();
             dex_final_label.Text = dexterity.ToString();
             char_final_label.Text = charisma.ToString();
+        }
+
+        private void OpenMap_Click(object sender, EventArgs e)
+        {
+            string fileName;
+            openFileDialog1.InitialDirectory = "This PC";
+            openFileDialog1.Title = "Open a map image file";
+            openFileDialog1.ShowDialog();
+
+            fileName = openFileDialog1.FileName;
+
+            map = Image.FromFile(fileName);
+
+            int width = map.Width * 100 / 50;
+            int height = map.Height * 100 / 100;
+            resize(width, height);
+            
+        }
+
+        private void resize(int width, int height)
+        {
+            Bitmap image = new Bitmap(width, height);
+            Rectangle rect = new Rectangle(0, 0, width, height);
+            
+            image.SetResolution(map.HorizontalResolution, map.VerticalResolution);
+            using (var g = Graphics.FromImage(image))
+            {
+                g.SmoothingMode = SmoothingMode.HighQuality;
+                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                g.CompositingMode = CompositingMode.SourceCopy;
+                g.CompositingQuality = CompositingQuality.HighQuality;
+                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                
+                using (var wrapmode = new System.Drawing.Imaging.ImageAttributes())
+                {
+                    wrapmode.SetWrapMode(WrapMode.TileFlipXY);
+                    g.DrawImage(map, rect, 0, 0, map.Width, map.Height, GraphicsUnit.Pixel, wrapmode);
+
+                }
+            }
+
+            pictureBox1.Image = image;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+
+           
+
+        }
+
+        private void ResizeBar_Scroll(object sender, EventArgs e)
+        {
+            int width = (map.Width * ResizeBar.Value) / 50;
+            int height = (map.Height * ResizeBar.Value) / 100;
+
+            resize(width, height);
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.character_page = new System.Windows.Forms.TabPage();
             this.update_btn = new System.Windows.Forms.Button();
@@ -159,9 +160,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.map_page = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.ResizeBar = new System.Windows.Forms.TrackBar();
+            this.OpenMap = new System.Windows.Forms.Button();
             this.notes_page = new System.Windows.Forms.TabPage();
             this.npc_page = new System.Windows.Forms.TabPage();
             this.reference_page = new System.Windows.Forms.TabPage();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -182,6 +189,10 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).BeginInit();
+            this.map_page.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResizeBar)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -194,7 +205,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(839, 449);
+            this.tabControl1.Size = new System.Drawing.Size(1270, 726);
             this.tabControl1.TabIndex = 0;
             // 
             // character_page
@@ -212,7 +223,7 @@
             this.character_page.Location = new System.Drawing.Point(4, 22);
             this.character_page.Name = "character_page";
             this.character_page.Padding = new System.Windows.Forms.Padding(3);
-            this.character_page.Size = new System.Drawing.Size(831, 423);
+            this.character_page.Size = new System.Drawing.Size(1262, 700);
             this.character_page.TabIndex = 0;
             this.character_page.Text = "Character";
             this.character_page.UseVisualStyleBackColor = true;
@@ -1635,13 +1646,56 @@
             // 
             // map_page
             // 
+            this.map_page.Controls.Add(this.pictureBox1);
+            this.map_page.Controls.Add(this.groupBox9);
             this.map_page.Location = new System.Drawing.Point(4, 22);
             this.map_page.Name = "map_page";
             this.map_page.Padding = new System.Windows.Forms.Padding(3);
-            this.map_page.Size = new System.Drawing.Size(831, 423);
+            this.map_page.Size = new System.Drawing.Size(1262, 700);
             this.map_page.TabIndex = 1;
             this.map_page.Text = "Map";
             this.map_page.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 69);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1247, 466);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.ResizeBar);
+            this.groupBox9.Controls.Add(this.OpenMap);
+            this.groupBox9.Location = new System.Drawing.Point(3, 6);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(822, 63);
+            this.groupBox9.TabIndex = 1;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Controls";
+            // 
+            // ResizeBar
+            // 
+            this.ResizeBar.Location = new System.Drawing.Point(87, 12);
+            this.ResizeBar.Maximum = 100;
+            this.ResizeBar.Minimum = 1;
+            this.ResizeBar.Name = "ResizeBar";
+            this.ResizeBar.Size = new System.Drawing.Size(729, 45);
+            this.ResizeBar.TabIndex = 3;
+            this.ResizeBar.Value = 100;
+            this.ResizeBar.Scroll += new System.EventHandler(this.ResizeBar_Scroll);
+            // 
+            // OpenMap
+            // 
+            this.OpenMap.Location = new System.Drawing.Point(6, 19);
+            this.OpenMap.Name = "OpenMap";
+            this.OpenMap.Size = new System.Drawing.Size(75, 23);
+            this.OpenMap.TabIndex = 0;
+            this.OpenMap.Text = "OpenMap";
+            this.OpenMap.UseVisualStyleBackColor = true;
+            this.OpenMap.Click += new System.EventHandler(this.OpenMap_Click);
             // 
             // notes_page
             // 
@@ -1670,12 +1724,24 @@
             this.reference_page.Text = "Reference";
             this.reference_page.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 473);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1279, 574);
             this.Controls.Add(this.tabControl1);
+            this.DoubleBuffered = true;
+            this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Name = "main_form";
             this.Text = "RPG Helper";
             this.tabControl1.ResumeLayout(false);
@@ -1706,6 +1772,11 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).EndInit();
+            this.map_page.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResizeBar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1846,6 +1917,12 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.RichTextBox features_textbox;
         private System.Windows.Forms.Button update_btn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button OpenMap;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TrackBar ResizeBar;
     }
 }
 
