@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.character_page = new System.Windows.Forms.TabPage();
+            this.lbl_Players = new System.Windows.Forms.Label();
+            this.lb_CurrentPlayers = new System.Windows.Forms.ListBox();
             this.btn_AddPlayer = new System.Windows.Forms.Button();
             this.update_btn = new System.Windows.Forms.Button();
             this.features_textbox = new System.Windows.Forms.RichTextBox();
@@ -172,9 +173,6 @@
             this.lv_NPC_List = new System.Windows.Forms.ListView();
             this.reference_page = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lb_CurrentPlayers = new System.Windows.Forms.ListBox();
-            this.lbl_Players = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -237,6 +235,23 @@
             this.character_page.TabIndex = 0;
             this.character_page.Text = "Character";
             this.character_page.UseVisualStyleBackColor = true;
+            // 
+            // lbl_Players
+            // 
+            this.lbl_Players.AutoSize = true;
+            this.lbl_Players.Location = new System.Drawing.Point(838, 6);
+            this.lbl_Players.Name = "lbl_Players";
+            this.lbl_Players.Size = new System.Drawing.Size(55, 13);
+            this.lbl_Players.TabIndex = 38;
+            this.lbl_Players.Text = "Player List";
+            // 
+            // lb_CurrentPlayers
+            // 
+            this.lb_CurrentPlayers.FormattingEnabled = true;
+            this.lb_CurrentPlayers.Location = new System.Drawing.Point(841, 32);
+            this.lb_CurrentPlayers.Name = "lb_CurrentPlayers";
+            this.lb_CurrentPlayers.Size = new System.Drawing.Size(150, 394);
+            this.lb_CurrentPlayers.TabIndex = 37;
             // 
             // btn_AddPlayer
             // 
@@ -1774,23 +1789,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lb_CurrentPlayers
-            // 
-            this.lb_CurrentPlayers.FormattingEnabled = true;
-            this.lb_CurrentPlayers.Location = new System.Drawing.Point(841, 32);
-            this.lb_CurrentPlayers.Name = "lb_CurrentPlayers";
-            this.lb_CurrentPlayers.Size = new System.Drawing.Size(150, 394);
-            this.lb_CurrentPlayers.TabIndex = 37;
-            // 
-            // lbl_Players
-            // 
-            this.lbl_Players.AutoSize = true;
-            this.lbl_Players.Location = new System.Drawing.Point(838, 6);
-            this.lbl_Players.Name = "lbl_Players";
-            this.lbl_Players.Size = new System.Drawing.Size(55, 13);
-            this.lbl_Players.TabIndex = 38;
-            this.lbl_Players.Text = "Player List";
-            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1982,7 +1980,6 @@
         private System.Windows.Forms.Button OpenMap;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btn_Notes_Save;
         private System.Windows.Forms.Label txt_NPC_LIST;
