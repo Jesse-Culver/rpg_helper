@@ -16,11 +16,12 @@ namespace rpg_helper
         Image map;
         Player_Collection p = new Player_Collection();
         NPC_Collection npc = new NPC_Collection();
-
+        BindingSource bs = new BindingSource();
 
         public main_form()
         {
             InitializeComponent();
+            bs.DataSource = p.playerList;
             //Set Defaults
             race_dropdown.SelectedIndex = 0;
             class_dropdown.SelectedIndex = 0;
@@ -32,7 +33,19 @@ namespace rpg_helper
             background_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             alignment_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            
+            //Set list here?
+            try {
+                lb_CurrentPlayers.DisplayMember = "name";
+                lb_CurrentPlayers.ValueMember = "id";
+                lb_CurrentPlayers.DataSource = bs;
+            }
+            catch
+            {
+                Console.WriteLine("Blehhhh");
+            }
+
+
+
         }
 
         /**********
@@ -95,10 +108,6 @@ namespace rpg_helper
             //Abilities
             features_textbox.ResetText();
 
-            //Set list here?
-            lb_CurrentPlayers.DataSource = p.playerList;
-            lb_CurrentPlayers.DisplayMember="name";
-            lb_CurrentPlayers.ValueMember = "id";
 
             //Temp variables
             int strength = Convert.ToInt32(str_abs_numbox.Value);
@@ -265,15 +274,7 @@ namespace rpg_helper
             
         }
         
-        private void refereshMenu()
-        {
-            //repopulate items here if needed.
-            //lb_CurrentPlayers.DataSource = p.playerList;
-            //lb_CurrentPlayers.DisplayMember = "name";
-            //lb_CurrentPlayers.Refresh();
-            //lb_CurrentPlayers.Update();
-
-        }
+       
 
         private void btn_AddPlayer_Click(object sender, EventArgs e)
         {
@@ -282,9 +283,11 @@ namespace rpg_helper
             //Get all the feilds from the form and populate player object from them.
             //Then add the player object through the collection class instance declared above.
             tempP.name = charname_txtbx.Text;
+            tempP.id = p.playerCount;
             p.addPlayer(tempP);
+
+            bs.ResetBindings(false);
             Console.WriteLine(p.playerList.Count);
-            refereshMenu();
         }
     }
 }

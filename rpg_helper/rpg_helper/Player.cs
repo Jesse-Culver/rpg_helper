@@ -8,8 +8,16 @@ namespace rpg_helper
 {
     class Player
     {
-        public string name;
-        public int id;
+        public string name
+        {
+            get;
+            set;
+        }
+        public int id
+        {
+            get;
+            set;
+        }
         public int strength;
         public int constitution;
         public int dexterity;

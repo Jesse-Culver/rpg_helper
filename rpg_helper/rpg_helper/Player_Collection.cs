@@ -19,8 +19,12 @@ namespace rpg_helper
 
         public Player_Collection()
         {
+            Player p = new Player();
+            p.name = "John";
+            p.id = 0;
+            playerList.Add(p);
             //Constructor hree
-            playerCount = 0;
+            playerCount = 1;
             turnCounter = 0;
             active_Player = null;
         }
