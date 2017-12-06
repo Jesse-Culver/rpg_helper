@@ -162,7 +162,6 @@
             this.map_page = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.ResizeBar = new System.Windows.Forms.TrackBar();
             this.OpenMap = new System.Windows.Forms.Button();
             this.notes_page = new System.Windows.Forms.TabPage();
             this.npc_page = new System.Windows.Forms.TabPage();
@@ -192,7 +191,6 @@
             this.map_page.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ResizeBar)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1667,25 +1665,13 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.ResizeBar);
             this.groupBox9.Controls.Add(this.OpenMap);
             this.groupBox9.Location = new System.Drawing.Point(3, 6);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(822, 63);
+            this.groupBox9.Size = new System.Drawing.Size(90, 57);
             this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Controls";
-            // 
-            // ResizeBar
-            // 
-            this.ResizeBar.Location = new System.Drawing.Point(87, 12);
-            this.ResizeBar.Maximum = 100;
-            this.ResizeBar.Minimum = 1;
-            this.ResizeBar.Name = "ResizeBar";
-            this.ResizeBar.Size = new System.Drawing.Size(729, 45);
-            this.ResizeBar.TabIndex = 3;
-            this.ResizeBar.Value = 100;
-            this.ResizeBar.Scroll += new System.EventHandler(this.ResizeBar_Scroll);
             // 
             // OpenMap
             // 
@@ -1701,7 +1687,7 @@
             // 
             this.notes_page.Location = new System.Drawing.Point(4, 22);
             this.notes_page.Name = "notes_page";
-            this.notes_page.Size = new System.Drawing.Size(831, 423);
+            this.notes_page.Size = new System.Drawing.Size(1262, 700);
             this.notes_page.TabIndex = 2;
             this.notes_page.Text = "Notes";
             this.notes_page.UseVisualStyleBackColor = true;
@@ -1710,7 +1696,7 @@
             // 
             this.npc_page.Location = new System.Drawing.Point(4, 22);
             this.npc_page.Name = "npc_page";
-            this.npc_page.Size = new System.Drawing.Size(831, 423);
+            this.npc_page.Size = new System.Drawing.Size(1262, 700);
             this.npc_page.TabIndex = 3;
             this.npc_page.Text = "NPC\'s";
             this.npc_page.UseVisualStyleBackColor = true;
@@ -1719,7 +1705,7 @@
             // 
             this.reference_page.Location = new System.Drawing.Point(4, 22);
             this.reference_page.Name = "reference_page";
-            this.reference_page.Size = new System.Drawing.Size(831, 423);
+            this.reference_page.Size = new System.Drawing.Size(1262, 700);
             this.reference_page.TabIndex = 4;
             this.reference_page.Text = "Reference";
             this.reference_page.UseVisualStyleBackColor = true;
@@ -1730,7 +1716,6 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // main_form
             // 
@@ -1738,7 +1723,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1279, 574);
+            this.ClientSize = new System.Drawing.Size(855, 464);
             this.Controls.Add(this.tabControl1);
             this.DoubleBuffered = true;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -1775,8 +1760,6 @@
             this.map_page.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ResizeBar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1922,7 +1905,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TrackBar ResizeBar;
     }
 }
 

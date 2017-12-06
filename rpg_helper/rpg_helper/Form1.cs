@@ -14,8 +14,11 @@ namespace rpg_helper
     public partial class main_form : Form
     {
         Image map;
+        TrackBar tb;
+        Form form;
+        ScrollBar sb;
+        Panel p;
 
-        
 
         public main_form()
         {
@@ -30,6 +33,10 @@ namespace rpg_helper
             class_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             background_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             alignment_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
+            tb = new TrackBar();
+            form = new Form();
+            sb = new VScrollBar();
+            p = new Panel();
         }
 
         /**********
@@ -223,6 +230,7 @@ namespace rpg_helper
             fileName = openFileDialog1.FileName;
 
             map = Image.FromFile(fileName);
+            
 
             int width = map.Width * 100 / 50;
             int height = map.Height * 100 / 100;
@@ -232,6 +240,7 @@ namespace rpg_helper
 
         private void resize(int width, int height)
         {
+            
             Bitmap image = new Bitmap(width, height);
             Rectangle rect = new Rectangle(0, 0, width, height);
             
@@ -252,23 +261,49 @@ namespace rpg_helper
                 }
             }
 
-            pictureBox1.Image = image;
-        }
+           
+                
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
+           form.StartPosition = FormStartPosition.CenterScreen;
+           form.WindowState = FormWindowState.Normal;
+           form.FormBorderStyle = FormBorderStyle.Fixed3D;
+           form.WindowState = FormWindowState.Maximized;
 
+
+
+           p.AutoScroll = true;
+           p.AutoSize = true;
+           p.Size = form.Size;
+           p.Dock = DockStyle.Fill;
 
            
+            
+            
+           p.HorizontalScroll.Enabled = true;
+           p.HorizontalScroll.Visible = true;
+           p.HorizontalScroll.Maximum = 0;
+            
 
+           p.Controls.Add(sb);
+
+           PictureBox pb = new PictureBox();
+           pb.Dock = DockStyle.None;
+           pb.Size = image.Size;
+           pb.Image = image;
+
+           p.Controls.Add(pb);
+            
+           form.Controls.Add(p);
+           form.ShowDialog();
+
+            
+            
+
+            
         }
 
-        private void ResizeBar_Scroll(object sender, EventArgs e)
-        {
-            int width = (map.Width * ResizeBar.Value) / 50;
-            int height = (map.Height * ResizeBar.Value) / 100;
+        
 
-            resize(width, height);
-        }
+       
     }
 }
