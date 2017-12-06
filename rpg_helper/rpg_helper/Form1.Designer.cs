@@ -168,6 +168,10 @@
             this.reference_page = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btn_Notes_Save = new System.Windows.Forms.Button();
+            this.lv_NPC_List = new System.Windows.Forms.ListView();
+            this.txt_NPC_LIST = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -191,6 +195,8 @@
             this.map_page.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox9.SuspendLayout();
+            this.notes_page.SuspendLayout();
+            this.npc_page.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1685,6 +1691,8 @@
             // 
             // notes_page
             // 
+            this.notes_page.Controls.Add(this.btn_Notes_Save);
+            this.notes_page.Controls.Add(this.richTextBox1);
             this.notes_page.Location = new System.Drawing.Point(4, 22);
             this.notes_page.Name = "notes_page";
             this.notes_page.Size = new System.Drawing.Size(1262, 700);
@@ -1694,6 +1702,8 @@
             // 
             // npc_page
             // 
+            this.npc_page.Controls.Add(this.txt_NPC_LIST);
+            this.npc_page.Controls.Add(this.lv_NPC_List);
             this.npc_page.Location = new System.Drawing.Point(4, 22);
             this.npc_page.Name = "npc_page";
             this.npc_page.Size = new System.Drawing.Size(1262, 700);
@@ -1714,8 +1724,40 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // timer1
+            // richTextBox1
             // 
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(827, 386);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // btn_Notes_Save
+            // 
+            this.btn_Notes_Save.Location = new System.Drawing.Point(3, 392);
+            this.btn_Notes_Save.Name = "btn_Notes_Save";
+            this.btn_Notes_Save.Size = new System.Drawing.Size(75, 23);
+            this.btn_Notes_Save.TabIndex = 1;
+            this.btn_Notes_Save.Text = "Save";
+            this.btn_Notes_Save.UseVisualStyleBackColor = true;
+            this.btn_Notes_Save.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lv_NPC_List
+            // 
+            this.lv_NPC_List.Location = new System.Drawing.Point(0, 35);
+            this.lv_NPC_List.Name = "lv_NPC_List";
+            this.lv_NPC_List.Size = new System.Drawing.Size(114, 281);
+            this.lv_NPC_List.TabIndex = 0;
+            this.lv_NPC_List.UseCompatibleStateImageBehavior = false;
+            // 
+            // txt_NPC_LIST
+            // 
+            this.txt_NPC_LIST.AutoSize = true;
+            this.txt_NPC_LIST.Location = new System.Drawing.Point(3, 19);
+            this.txt_NPC_LIST.Name = "txt_NPC_LIST";
+            this.txt_NPC_LIST.Size = new System.Drawing.Size(80, 13);
+            this.txt_NPC_LIST.TabIndex = 1;
+            this.txt_NPC_LIST.Text = "NPCs In Scene";
             // 
             // main_form
             // 
@@ -1760,6 +1802,9 @@
             this.map_page.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox9.ResumeLayout(false);
+            this.notes_page.ResumeLayout(false);
+            this.npc_page.ResumeLayout(false);
+            this.npc_page.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1905,6 +1950,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btn_Notes_Save;
+        private System.Windows.Forms.Label txt_NPC_LIST;
+        private System.Windows.Forms.ListView lv_NPC_List;
     }
 }
 
