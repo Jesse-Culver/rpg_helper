@@ -258,6 +258,8 @@ namespace rpg_helper
             wis_final_label.Text = wisdom.ToString();
             dex_final_label.Text = dexterity.ToString();
             char_final_label.Text = charisma.ToString();
+            speed_abm_label.Text = speed.ToString();
+
             //calculate modifier
             str_abm_label.Text = Math.Floor(((float)strength - 10) / 2).ToString();
             const_abm_label.Text = Math.Floor(((float)constitution - 10) / 2).ToString();

@@ -112,7 +112,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.currenthp_numbox = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
-            this.maxhp_label = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.armorclass_numbox = new System.Windows.Forms.NumericUpDown();
@@ -173,6 +172,7 @@
             this.lv_NPC_List = new System.Windows.Forms.ListView();
             this.reference_page = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.maxhp_numbox = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -198,6 +198,7 @@
             this.groupBox9.SuspendLayout();
             this.notes_page.SuspendLayout();
             this.npc_page.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.maxhp_numbox)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1038,13 +1039,13 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.maxhp_numbox);
             this.groupBox4.Controls.Add(this.hitdie_label);
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.Controls.Add(this.numericUpDown1);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Controls.Add(this.currenthp_numbox);
             this.groupBox4.Controls.Add(this.label22);
-            this.groupBox4.Controls.Add(this.maxhp_label);
             this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Location = new System.Drawing.Point(6, 218);
             this.groupBox4.Name = "groupBox4";
@@ -1057,7 +1058,7 @@
             // 
             this.hitdie_label.AutoSize = true;
             this.hitdie_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.hitdie_label.Location = new System.Drawing.Point(304, 16);
+            this.hitdie_label.Location = new System.Drawing.Point(322, 16);
             this.hitdie_label.Name = "hitdie_label";
             this.hitdie_label.Size = new System.Drawing.Size(13, 13);
             this.hitdie_label.TabIndex = 43;
@@ -1066,7 +1067,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(250, 16);
+            this.label23.Location = new System.Drawing.Point(268, 16);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(48, 13);
             this.label23.TabIndex = 48;
@@ -1074,20 +1075,15 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(202, 9);
+            this.numericUpDown1.Location = new System.Drawing.Point(217, 12);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(45, 20);
             this.numericUpDown1.TabIndex = 45;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(159, 16);
+            this.label20.Location = new System.Drawing.Point(177, 16);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(37, 13);
             this.label20.TabIndex = 46;
@@ -1095,7 +1091,7 @@
             // 
             // currenthp_numbox
             // 
-            this.currenthp_numbox.Location = new System.Drawing.Point(111, 9);
+            this.currenthp_numbox.Location = new System.Drawing.Point(129, 14);
             this.currenthp_numbox.Name = "currenthp_numbox";
             this.currenthp_numbox.Size = new System.Drawing.Size(45, 20);
             this.currenthp_numbox.TabIndex = 28;
@@ -1108,21 +1104,11 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(61, 16);
+            this.label22.Location = new System.Drawing.Point(79, 16);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(44, 13);
             this.label22.TabIndex = 44;
             this.label22.Text = "Current:";
-            // 
-            // maxhp_label
-            // 
-            this.maxhp_label.AutoSize = true;
-            this.maxhp_label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.maxhp_label.Location = new System.Drawing.Point(42, 16);
-            this.maxhp_label.Name = "maxhp_label";
-            this.maxhp_label.Size = new System.Drawing.Size(13, 13);
-            this.maxhp_label.TabIndex = 43;
-            this.maxhp_label.Text = "0";
             // 
             // label24
             // 
@@ -1789,6 +1775,18 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // maxhp_numbox
+            // 
+            this.maxhp_numbox.Location = new System.Drawing.Point(32, 14);
+            this.maxhp_numbox.Name = "maxhp_numbox";
+            this.maxhp_numbox.Size = new System.Drawing.Size(45, 20);
+            this.maxhp_numbox.TabIndex = 49;
+            this.maxhp_numbox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1836,6 +1834,7 @@
             this.notes_page.ResumeLayout(false);
             this.npc_page.ResumeLayout(false);
             this.npc_page.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.maxhp_numbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1894,7 +1893,6 @@
         private System.Windows.Forms.Label dex_abm_label;
         private System.Windows.Forms.Label speed_abm_label;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label maxhp_label;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label20;
@@ -1987,6 +1985,7 @@
         private System.Windows.Forms.Button btn_AddPlayer;
         private System.Windows.Forms.Label lbl_Players;
         private System.Windows.Forms.ListBox lb_CurrentPlayers;
+        private System.Windows.Forms.NumericUpDown maxhp_numbox;
     }
 }
 
