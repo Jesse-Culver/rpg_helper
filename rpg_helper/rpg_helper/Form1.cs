@@ -14,7 +14,7 @@ namespace rpg_helper
     public partial class main_form : Form
     {
         Image map;
-        
+        Player p;
         
 
 
