@@ -92,6 +92,25 @@ namespace rpg_helper
             sleightofhand_label.Text = "0";
             stealth_label.Text = "0";
             survival_label.Text = "0";
+            //Skills checkboxes
+            acro_checkbox.Checked = false;
+            animal_checkbox.Checked = false;
+            arcana_checkbox.Checked = false;
+            athletics_checkbox.Checked = false;
+            deception_checkbox.Checked = false;
+            history_checkbox.Checked = false;
+            insight_checkbox.Checked = false;
+            intimidation_checkbox.Checked = false;
+            investigation_checkbox.Checked = false;
+            medicine_checkbox.Checked = false;
+            nature_checkbox.Checked = false;
+            perception_checkbox.Checked = false;
+            performance_checkbox.Checked = false;
+            persuasion_checkbox.Checked = false;
+            religion_checkbox.Checked = false;
+            sleightofhand_checkbox.Checked = false;
+            stealth_checkbox.Checked = false;
+            survival_checkbox.Checked = false;
             //Saving Throws
             strength_save_label.Text = "0";
             dex_save_label.Text = "0";
@@ -201,21 +220,33 @@ namespace rpg_helper
             {
                 //Acolyte
                 case 0:
+                    insight_checkbox.Checked = true;
+                    religion_checkbox.Checked = true;
                     break;
                 //Criminal
                 case 1:
+                    deception_checkbox.Checked = true;
+                    stealth_checkbox.Checked = true;
                     break;
                 //Folk Hero
                 case 2:
+                    animal_checkbox.Checked = true;
+                    survival_checkbox.Checked = true;
                     break;
                 //Noble
                 case 3:
+                    history_checkbox.Checked = true;
+                    persuasion_checkbox.Checked = true;
                     break;
                 //Sage
                 case 4:
+                    arcana_checkbox.Checked = true;
+                    history_checkbox.Checked = true;
                     break;
                 //Soldier
                 case 5:
+                    athletics_checkbox.Checked = true;
+                    intimidation_checkbox.Checked = true;
                     break;
                 default:
                     break;
@@ -227,6 +258,12 @@ namespace rpg_helper
             wis_final_label.Text = wisdom.ToString();
             dex_final_label.Text = dexterity.ToString();
             char_final_label.Text = charisma.ToString();
+            //calculate modifier
+            str_abm_label.Text = Math.Floor(((float)strength - 10) / 2).ToString();
+            const_abm_label.Text = Math.Floor(((float)constitution - 10) / 2).ToString();
+            wis_abm_label.Text = Math.Floor(((float)wisdom - 10) / 2).ToString();
+            dex_abm_label.Text = Math.Floor(((float)dexterity - 10) / 2).ToString();
+            char_abm_label.Text = Math.Floor(((float)charisma - 10) / 2).ToString();
         }
 
         private void OpenMap_Click(object sender, EventArgs e)
