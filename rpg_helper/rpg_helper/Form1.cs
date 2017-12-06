@@ -14,10 +14,8 @@ namespace rpg_helper
     public partial class main_form : Form
     {
         Image map;
-        TrackBar tb;
-        Form form;
-        ScrollBar sb;
-        Panel p;
+        
+        
 
 
         public main_form()
@@ -33,10 +31,7 @@ namespace rpg_helper
             class_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             background_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             alignment_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
-            tb = new TrackBar();
-            form = new Form();
-            sb = new VScrollBar();
-            p = new Panel();
+            
         }
 
         /**********
@@ -230,75 +225,38 @@ namespace rpg_helper
             fileName = openFileDialog1.FileName;
 
             map = Image.FromFile(fileName);
-            
-
-            int width = map.Width * 100 / 50;
-            int height = map.Height * 100 / 100;
-            resize(width, height);
+           
+            GenerateMap();
             
         }
 
-        private void resize(int width, int height)
+        private void GenerateMap()
         {
-            
-            Bitmap image = new Bitmap(width, height);
-            Rectangle rect = new Rectangle(0, 0, width, height);
-            
-            image.SetResolution(map.HorizontalResolution, map.VerticalResolution);
-            using (var g = Graphics.FromImage(image))
-            {
-                g.SmoothingMode = SmoothingMode.HighQuality;
-                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                g.CompositingMode = CompositingMode.SourceCopy;
-                g.CompositingQuality = CompositingQuality.HighQuality;
-                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                
-                using (var wrapmode = new System.Drawing.Imaging.ImageAttributes())
-                {
-                    wrapmode.SetWrapMode(WrapMode.TileFlipXY);
-                    g.DrawImage(map, rect, 0, 0, map.Width, map.Height, GraphicsUnit.Pixel, wrapmode);
-
-                }
-            }
-
-           
-                
+           Form form = new Form();
+           Panel p = new Panel();
+           PictureBox pb = new PictureBox();
 
            form.StartPosition = FormStartPosition.CenterScreen;
            form.WindowState = FormWindowState.Normal;
            form.FormBorderStyle = FormBorderStyle.Fixed3D;
            form.WindowState = FormWindowState.Maximized;
 
-
-
            p.AutoScroll = true;
            p.AutoSize = true;
            p.Size = form.Size;
            p.Dock = DockStyle.Fill;
-
-           
-            
-            
            p.HorizontalScroll.Enabled = true;
            p.HorizontalScroll.Visible = true;
            p.HorizontalScroll.Maximum = 0;
             
-
-           p.Controls.Add(sb);
-
-           PictureBox pb = new PictureBox();
            pb.Dock = DockStyle.None;
-           pb.Size = image.Size;
-           pb.Image = image;
+           pb.Size = map.Size;
+           pb.Image = map;
 
            p.Controls.Add(pb);
             
            form.Controls.Add(p);
            form.ShowDialog();
-
-            
-            
-
             
         }
 
