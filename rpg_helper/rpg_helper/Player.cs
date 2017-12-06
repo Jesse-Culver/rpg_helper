@@ -8,17 +8,18 @@ namespace rpg_helper
 {
     class Player
     {
-        string name;
-        int strength;
-        int constitution;
-        int dexterity;
-        int wisdom;
-        int charisma;
-        int speed;
+        public string name;
+        public int id;
+        public int strength;
+        public int constitution;
+        public int dexterity;
+        public int wisdom;
+        public int charisma;
+        public int speed;
 
-        int health;
+        public int health;
         //Use in menu?
-        enum Race_options
+        public enum Race_options
         {
             Drawf,
             Elf,
@@ -26,20 +27,21 @@ namespace rpg_helper
             Halfing
         };
         //Fill in addtional classes here
-        enum Class_options
+        public enum Class_options
         {
             Acolyte,
             Folk_Hero,
             Warrior,
             Mage
         };
-        enum appended_Skills
+        //This is extra skills like save modifiers and such
+        public enum appended_Skills
         {
             test,
             test2
         };
-        Race_options races;
-        Class_options playerClass;
+        public Race_options races;
+        public Class_options playerClass;
 
         //Keeps track of extra skills
         List<appended_Skills> extraSkills = new List<appended_Skills>();

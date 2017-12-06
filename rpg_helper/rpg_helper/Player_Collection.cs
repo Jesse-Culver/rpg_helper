@@ -9,13 +9,21 @@ namespace rpg_helper
     //This is for holding all our player objects and tracking who's turn it is.
     class Player_Collection
     {
-        int playerCount;
+        public int playerCount;
 
         //Linked list to keep track of player
-        List<Player> playerList = new List<Player>();
+        public List<Player> playerList = new List<Player>();
         //Track who's turn it is somehow
-        int turnCounter;
-        Player active_Player;
+        public int turnCounter;
+        public Player active_Player;
+
+        public Player_Collection()
+        {
+            //Constructor hree
+            playerCount = 0;
+            turnCounter = 0;
+            active_Player = null;
+        }
 
         public void endTurn()
         {
@@ -25,12 +33,15 @@ namespace rpg_helper
 
         public void deletePlayer(string playerName)
         {
-           
+            playerCount--;
         }
 
         //Generate player object and add it to the list
         public void addPlayer(Player p)
         {
+            //Add player to list, incriment count
+            playerList.Add(p);
+            playerCount++;
 
         }
 

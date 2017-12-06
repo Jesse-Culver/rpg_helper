@@ -14,8 +14,8 @@ namespace rpg_helper
     public partial class main_form : Form
     {
         Image map;
-        Player p;
-        
+        Player_Collection p = new Player_Collection();
+        NPC_Collection npc = new NPC_Collection();
 
 
         public main_form()
@@ -31,6 +31,7 @@ namespace rpg_helper
             class_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             background_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             alignment_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
+
             
         }
 
@@ -93,7 +94,11 @@ namespace rpg_helper
             char_save_checkbox.Checked = false;
             //Abilities
             features_textbox.ResetText();
-            
+
+            //Set list here?
+            lb_CurrentPlayers.DataSource = p.playerList;
+            lb_CurrentPlayers.DisplayMember="name";
+            lb_CurrentPlayers.ValueMember = "id";
 
             //Temp variables
             int strength = Convert.ToInt32(str_abs_numbox.Value);
@@ -259,10 +264,27 @@ namespace rpg_helper
            form.ShowDialog();
             
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void refereshMenu()
         {
+            //repopulate items here if needed.
+            //lb_CurrentPlayers.DataSource = p.playerList;
+            //lb_CurrentPlayers.DisplayMember = "name";
+            //lb_CurrentPlayers.Refresh();
+            //lb_CurrentPlayers.Update();
 
+        }
+
+        private void btn_AddPlayer_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("adding player");
+            Player tempP = new Player();
+            //Get all the feilds from the form and populate player object from them.
+            //Then add the player object through the collection class instance declared above.
+            tempP.name = charname_txtbx.Text;
+            p.addPlayer(tempP);
+            Console.WriteLine(p.playerList.Count);
+            refereshMenu();
         }
     }
 }

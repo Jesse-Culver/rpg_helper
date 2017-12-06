@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.character_page = new System.Windows.Forms.TabPage();
+            this.btn_AddPlayer = new System.Windows.Forms.Button();
             this.update_btn = new System.Windows.Forms.Button();
             this.features_textbox = new System.Windows.Forms.RichTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -164,14 +165,16 @@
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.OpenMap = new System.Windows.Forms.Button();
             this.notes_page = new System.Windows.Forms.TabPage();
+            this.btn_Notes_Save = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.npc_page = new System.Windows.Forms.TabPage();
+            this.txt_NPC_LIST = new System.Windows.Forms.Label();
+            this.lv_NPC_List = new System.Windows.Forms.ListView();
             this.reference_page = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.btn_Notes_Save = new System.Windows.Forms.Button();
-            this.lv_NPC_List = new System.Windows.Forms.ListView();
-            this.txt_NPC_LIST = new System.Windows.Forms.Label();
+            this.lb_CurrentPlayers = new System.Windows.Forms.ListBox();
+            this.lbl_Players = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -214,6 +217,9 @@
             // 
             // character_page
             // 
+            this.character_page.Controls.Add(this.lbl_Players);
+            this.character_page.Controls.Add(this.lb_CurrentPlayers);
+            this.character_page.Controls.Add(this.btn_AddPlayer);
             this.character_page.Controls.Add(this.update_btn);
             this.character_page.Controls.Add(this.features_textbox);
             this.character_page.Controls.Add(this.groupBox8);
@@ -231,6 +237,16 @@
             this.character_page.TabIndex = 0;
             this.character_page.Text = "Character";
             this.character_page.UseVisualStyleBackColor = true;
+            // 
+            // btn_AddPlayer
+            // 
+            this.btn_AddPlayer.Location = new System.Drawing.Point(649, 35);
+            this.btn_AddPlayer.Name = "btn_AddPlayer";
+            this.btn_AddPlayer.Size = new System.Drawing.Size(75, 23);
+            this.btn_AddPlayer.TabIndex = 36;
+            this.btn_AddPlayer.Text = "Add New";
+            this.btn_AddPlayer.UseVisualStyleBackColor = true;
+            this.btn_AddPlayer.Click += new System.EventHandler(this.btn_AddPlayer_Click);
             // 
             // update_btn
             // 
@@ -1700,6 +1716,23 @@
             this.notes_page.Text = "Notes";
             this.notes_page.UseVisualStyleBackColor = true;
             // 
+            // btn_Notes_Save
+            // 
+            this.btn_Notes_Save.Location = new System.Drawing.Point(3, 392);
+            this.btn_Notes_Save.Name = "btn_Notes_Save";
+            this.btn_Notes_Save.Size = new System.Drawing.Size(75, 23);
+            this.btn_Notes_Save.TabIndex = 1;
+            this.btn_Notes_Save.Text = "Save";
+            this.btn_Notes_Save.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(827, 386);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
             // npc_page
             // 
             this.npc_page.Controls.Add(this.txt_NPC_LIST);
@@ -1710,6 +1743,23 @@
             this.npc_page.TabIndex = 3;
             this.npc_page.Text = "NPC\'s";
             this.npc_page.UseVisualStyleBackColor = true;
+            // 
+            // txt_NPC_LIST
+            // 
+            this.txt_NPC_LIST.AutoSize = true;
+            this.txt_NPC_LIST.Location = new System.Drawing.Point(3, 19);
+            this.txt_NPC_LIST.Name = "txt_NPC_LIST";
+            this.txt_NPC_LIST.Size = new System.Drawing.Size(80, 13);
+            this.txt_NPC_LIST.TabIndex = 1;
+            this.txt_NPC_LIST.Text = "NPCs In Scene";
+            // 
+            // lv_NPC_List
+            // 
+            this.lv_NPC_List.Location = new System.Drawing.Point(0, 35);
+            this.lv_NPC_List.Name = "lv_NPC_List";
+            this.lv_NPC_List.Size = new System.Drawing.Size(114, 281);
+            this.lv_NPC_List.TabIndex = 0;
+            this.lv_NPC_List.UseCompatibleStateImageBehavior = false;
             // 
             // reference_page
             // 
@@ -1724,40 +1774,22 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // richTextBox1
+            // lb_CurrentPlayers
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(827, 386);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.lb_CurrentPlayers.FormattingEnabled = true;
+            this.lb_CurrentPlayers.Location = new System.Drawing.Point(841, 32);
+            this.lb_CurrentPlayers.Name = "lb_CurrentPlayers";
+            this.lb_CurrentPlayers.Size = new System.Drawing.Size(150, 394);
+            this.lb_CurrentPlayers.TabIndex = 37;
             // 
-            // btn_Notes_Save
+            // lbl_Players
             // 
-            this.btn_Notes_Save.Location = new System.Drawing.Point(3, 392);
-            this.btn_Notes_Save.Name = "btn_Notes_Save";
-            this.btn_Notes_Save.Size = new System.Drawing.Size(75, 23);
-            this.btn_Notes_Save.TabIndex = 1;
-            this.btn_Notes_Save.Text = "Save";
-            this.btn_Notes_Save.UseVisualStyleBackColor = true;
-            this.btn_Notes_Save.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lv_NPC_List
-            // 
-            this.lv_NPC_List.Location = new System.Drawing.Point(0, 35);
-            this.lv_NPC_List.Name = "lv_NPC_List";
-            this.lv_NPC_List.Size = new System.Drawing.Size(114, 281);
-            this.lv_NPC_List.TabIndex = 0;
-            this.lv_NPC_List.UseCompatibleStateImageBehavior = false;
-            // 
-            // txt_NPC_LIST
-            // 
-            this.txt_NPC_LIST.AutoSize = true;
-            this.txt_NPC_LIST.Location = new System.Drawing.Point(3, 19);
-            this.txt_NPC_LIST.Name = "txt_NPC_LIST";
-            this.txt_NPC_LIST.Size = new System.Drawing.Size(80, 13);
-            this.txt_NPC_LIST.TabIndex = 1;
-            this.txt_NPC_LIST.Text = "NPCs In Scene";
+            this.lbl_Players.AutoSize = true;
+            this.lbl_Players.Location = new System.Drawing.Point(838, 6);
+            this.lbl_Players.Name = "lbl_Players";
+            this.lbl_Players.Size = new System.Drawing.Size(55, 13);
+            this.lbl_Players.TabIndex = 38;
+            this.lbl_Players.Text = "Player List";
             // 
             // main_form
             // 
@@ -1765,7 +1797,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(855, 464);
+            this.ClientSize = new System.Drawing.Size(1008, 474);
             this.Controls.Add(this.tabControl1);
             this.DoubleBuffered = true;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -1773,6 +1805,7 @@
             this.Text = "RPG Helper";
             this.tabControl1.ResumeLayout(false);
             this.character_page.ResumeLayout(false);
+            this.character_page.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -1954,6 +1987,9 @@
         private System.Windows.Forms.Button btn_Notes_Save;
         private System.Windows.Forms.Label txt_NPC_LIST;
         private System.Windows.Forms.ListView lv_NPC_List;
+        private System.Windows.Forms.Button btn_AddPlayer;
+        private System.Windows.Forms.Label lbl_Players;
+        private System.Windows.Forms.ListBox lb_CurrentPlayers;
     }
 }
 
