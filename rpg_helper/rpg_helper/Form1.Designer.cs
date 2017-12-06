@@ -30,6 +30,14 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.character_page = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.btn_roll = new System.Windows.Forms.Button();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.diceResult = new System.Windows.Forms.TextBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.quantity = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.numberOfSides = new System.Windows.Forms.TextBox();
             this.lbl_Players = new System.Windows.Forms.Label();
             this.lb_CurrentPlayers = new System.Windows.Forms.ListBox();
             this.btn_AddPlayer = new System.Windows.Forms.Button();
@@ -106,6 +114,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.maxhp_numbox = new System.Windows.Forms.NumericUpDown();
             this.hitdie_label = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -172,14 +181,18 @@
             this.lv_NPC_List = new System.Windows.Forms.ListView();
             this.reference_page = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.maxhp_numbox = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.maxhp_numbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currenthp_numbox)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -198,7 +211,6 @@
             this.groupBox9.SuspendLayout();
             this.notes_page.SuspendLayout();
             this.npc_page.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxhp_numbox)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -216,6 +228,7 @@
             // 
             // character_page
             // 
+            this.character_page.Controls.Add(this.groupBox10);
             this.character_page.Controls.Add(this.lbl_Players);
             this.character_page.Controls.Add(this.lb_CurrentPlayers);
             this.character_page.Controls.Add(this.btn_AddPlayer);
@@ -237,6 +250,83 @@
             this.character_page.Text = "Character";
             this.character_page.UseVisualStyleBackColor = true;
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.btn_roll);
+            this.groupBox10.Controls.Add(this.groupBox13);
+            this.groupBox10.Controls.Add(this.groupBox12);
+            this.groupBox10.Controls.Add(this.groupBox11);
+            this.groupBox10.Location = new System.Drawing.Point(841, 120);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(139, 315);
+            this.groupBox10.TabIndex = 39;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Dice Roller";
+            // 
+            // btn_roll
+            // 
+            this.btn_roll.Location = new System.Drawing.Point(6, 133);
+            this.btn_roll.Name = "btn_roll";
+            this.btn_roll.Size = new System.Drawing.Size(127, 23);
+            this.btn_roll.TabIndex = 41;
+            this.btn_roll.Text = "Roll";
+            this.btn_roll.UseVisualStyleBackColor = true;
+            this.btn_roll.Click += new System.EventHandler(this.btn_roll_Click);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.diceResult);
+            this.groupBox13.Location = new System.Drawing.Point(6, 163);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(121, 145);
+            this.groupBox13.TabIndex = 40;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Result";
+            // 
+            // diceResult
+            // 
+            this.diceResult.Location = new System.Drawing.Point(6, 19);
+            this.diceResult.Multiline = true;
+            this.diceResult.Name = "diceResult";
+            this.diceResult.ReadOnly = true;
+            this.diceResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.diceResult.Size = new System.Drawing.Size(109, 126);
+            this.diceResult.TabIndex = 0;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.quantity);
+            this.groupBox12.Location = new System.Drawing.Point(6, 76);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(127, 51);
+            this.groupBox12.TabIndex = 2;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Quantity";
+            // 
+            // quantity
+            // 
+            this.quantity.Location = new System.Drawing.Point(7, 20);
+            this.quantity.Name = "quantity";
+            this.quantity.Size = new System.Drawing.Size(114, 20);
+            this.quantity.TabIndex = 0;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.numberOfSides);
+            this.groupBox11.Location = new System.Drawing.Point(6, 19);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(127, 50);
+            this.groupBox11.TabIndex = 1;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Number of sides";
+            // 
+            // numberOfSides
+            // 
+            this.numberOfSides.Location = new System.Drawing.Point(6, 19);
+            this.numberOfSides.Name = "numberOfSides";
+            this.numberOfSides.Size = new System.Drawing.Size(115, 20);
+            this.numberOfSides.TabIndex = 0;
+            // 
             // lbl_Players
             // 
             this.lbl_Players.AutoSize = true;
@@ -251,7 +341,7 @@
             this.lb_CurrentPlayers.FormattingEnabled = true;
             this.lb_CurrentPlayers.Location = new System.Drawing.Point(841, 32);
             this.lb_CurrentPlayers.Name = "lb_CurrentPlayers";
-            this.lb_CurrentPlayers.Size = new System.Drawing.Size(150, 394);
+            this.lb_CurrentPlayers.Size = new System.Drawing.Size(139, 82);
             this.lb_CurrentPlayers.TabIndex = 37;
             // 
             // btn_AddPlayer
@@ -1054,6 +1144,18 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "HIt Points";
             // 
+            // maxhp_numbox
+            // 
+            this.maxhp_numbox.Location = new System.Drawing.Point(32, 14);
+            this.maxhp_numbox.Name = "maxhp_numbox";
+            this.maxhp_numbox.Size = new System.Drawing.Size(45, 20);
+            this.maxhp_numbox.TabIndex = 49;
+            this.maxhp_numbox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // hitdie_label
             // 
             this.hitdie_label.AutoSize = true;
@@ -1775,18 +1877,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // maxhp_numbox
-            // 
-            this.maxhp_numbox.Location = new System.Drawing.Point(32, 14);
-            this.maxhp_numbox.Name = "maxhp_numbox";
-            this.maxhp_numbox.Size = new System.Drawing.Size(45, 20);
-            this.maxhp_numbox.TabIndex = 49;
-            this.maxhp_numbox.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1802,6 +1892,13 @@
             this.tabControl1.ResumeLayout(false);
             this.character_page.ResumeLayout(false);
             this.character_page.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -1812,6 +1909,7 @@
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.maxhp_numbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currenthp_numbox)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -1834,7 +1932,6 @@
             this.notes_page.ResumeLayout(false);
             this.npc_page.ResumeLayout(false);
             this.npc_page.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxhp_numbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1986,6 +2083,14 @@
         private System.Windows.Forms.Label lbl_Players;
         private System.Windows.Forms.ListBox lb_CurrentPlayers;
         private System.Windows.Forms.NumericUpDown maxhp_numbox;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.TextBox numberOfSides;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.TextBox diceResult;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.TextBox quantity;
+        private System.Windows.Forms.Button btn_roll;
     }
 }
 

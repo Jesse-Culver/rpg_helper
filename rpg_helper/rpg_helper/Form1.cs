@@ -14,6 +14,7 @@ namespace rpg_helper
     public partial class main_form : Form
     {
         Image map;
+        Random rand;
         Player_Collection p = new Player_Collection();
         NPC_Collection npc = new NPC_Collection();
         BindingSource bs = new BindingSource();
@@ -21,6 +22,7 @@ namespace rpg_helper
         public main_form()
         {
             InitializeComponent();
+            rand = new Random();
             bs.DataSource = p.playerList;
             //Set Defaults
             race_dropdown.SelectedIndex = 0;
@@ -32,6 +34,7 @@ namespace rpg_helper
             class_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             background_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
             alignment_dropdown.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
             //Set list here?
             try {
@@ -136,7 +139,7 @@ namespace rpg_helper
             int charisma = Convert.ToInt32(char_abs_numbox.Value);
             int speed = 0;
             //Add in racial bonuses
-            switch(race_dropdown.SelectedIndex)
+            switch (race_dropdown.SelectedIndex)
             {
                 //Dwarf
                 case 0:
@@ -186,7 +189,7 @@ namespace rpg_helper
                     break;
             }
             //Add in class bonuses
-            switch(class_dropdown.SelectedIndex)
+            switch (class_dropdown.SelectedIndex)
             {
                 //Cleric
                 case 0:
@@ -216,7 +219,7 @@ namespace rpg_helper
                     break;
             }
             //Add in background bonuses
-            switch(background_dropdown.SelectedIndex)
+            switch (background_dropdown.SelectedIndex)
             {
                 //Acolyte
                 case 0:
@@ -278,42 +281,42 @@ namespace rpg_helper
             fileName = openFileDialog1.FileName;
 
             map = Image.FromFile(fileName);
-           
+
             GenerateMap();
-            
+
         }
 
         private void GenerateMap()
         {
-           Form form = new Form();
-           Panel p = new Panel();
-           PictureBox pb = new PictureBox();
+            Form form = new Form();
+            Panel p = new Panel();
+            PictureBox pb = new PictureBox();
 
-           form.StartPosition = FormStartPosition.CenterScreen;
-           form.WindowState = FormWindowState.Normal;
-           form.FormBorderStyle = FormBorderStyle.Fixed3D;
-           form.WindowState = FormWindowState.Maximized;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.WindowState = FormWindowState.Normal;
+            form.FormBorderStyle = FormBorderStyle.Fixed3D;
+            form.WindowState = FormWindowState.Maximized;
 
-           p.AutoScroll = true;
-           p.AutoSize = true;
-           p.Size = form.Size;
-           p.Dock = DockStyle.Fill;
-           p.HorizontalScroll.Enabled = true;
-           p.HorizontalScroll.Visible = true;
-           p.HorizontalScroll.Maximum = 0;
-            
-           pb.Dock = DockStyle.None;
-           pb.Size = map.Size;
-           pb.Image = map;
+            p.AutoScroll = true;
+            p.AutoSize = true;
+            p.Size = form.Size;
+            p.Dock = DockStyle.Fill;
+            p.HorizontalScroll.Enabled = true;
+            p.HorizontalScroll.Visible = true;
+            p.HorizontalScroll.Maximum = 0;
 
-           p.Controls.Add(pb);
-            
-           form.Controls.Add(p);
-           form.ShowDialog();
-            
+            pb.Dock = DockStyle.None;
+            pb.Size = map.Size;
+            pb.Image = map;
+
+            p.Controls.Add(pb);
+
+            form.Controls.Add(p);
+            form.ShowDialog();
+
         }
-        
-       
+
+
 
         private void btn_AddPlayer_Click(object sender, EventArgs e)
         {
@@ -327,6 +330,44 @@ namespace rpg_helper
 
             bs.ResetBindings(false);
             Console.WriteLine(p.playerList.Count);
+        }
+
+
+
+        private void btn_roll_Click(object sender, EventArgs e)
+        {
+            int q;
+            int nOS;
+            int counter = 0;
+            int num;
+
+            diceResult.Text = "";
+            
+
+            if (!int.TryParse(quantity.Text, out q))
+            {
+                q = 1;
+            }
+
+            if (!int.TryParse(numberOfSides.Text, out nOS))
+            {
+                nOS = 4;
+            }
+
+            for (int i = 0; i < q; i++)
+            {
+                num = rand.Next(1, nOS);
+                counter += num;
+
+                if (i < q - 1)
+                    diceResult.Text += num.ToString() + " + ";
+                else
+                    diceResult.Text += num.ToString();
+            }
+
+            diceResult.Text += " = " + counter.ToString();
+
+
         }
     }
 }
