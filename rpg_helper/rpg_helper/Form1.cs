@@ -347,16 +347,18 @@ namespace rpg_helper
             if (!int.TryParse(quantity.Text, out q))
             {
                 q = 1;
+                quantity.Text = q.ToString();
             }
 
             if (!int.TryParse(numberOfSides.Text, out nOS))
             {
                 nOS = 4;
+                numberOfSides.Text = nOS.ToString();
             }
 
             for (int i = 0; i < q; i++)
             {
-                num = rand.Next(1, nOS);
+                num = rand.Next(1, nOS+1);
                 counter += num;
 
                 if (i < q - 1)
