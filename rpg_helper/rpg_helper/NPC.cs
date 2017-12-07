@@ -8,7 +8,16 @@ namespace rpg_helper
 {
     class NPC
     {
-        public string name;
+        public string name
+        {
+            get;
+            set;
+        }
+        public int id
+        {
+            get;
+            set;
+        }
         //Skills go here
     }
 }

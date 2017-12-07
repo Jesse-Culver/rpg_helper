@@ -17,13 +17,14 @@ namespace rpg_helper
         Random rand;
         Player_Collection p = new Player_Collection();
         NPC_Collection npc = new NPC_Collection();
-        BindingSource bs = new BindingSource();
-
+        BindingSource player_bs = new BindingSource();
+        BindingSource npc_bs = new BindingSource();
         public main_form()
         {
             InitializeComponent();
             rand = new Random();
-            bs.DataSource = p.playerList;
+            player_bs.DataSource = p.playerList;
+            npc_bs.DataSource = npc.npc_List;
             //Set Defaults
             race_dropdown.SelectedIndex = 0;
             class_dropdown.SelectedIndex = 0;
@@ -40,7 +41,12 @@ namespace rpg_helper
             try {
                 lb_CurrentPlayers.DisplayMember = "name";
                 lb_CurrentPlayers.ValueMember = "id";
-                lb_CurrentPlayers.DataSource = bs;
+                lb_CurrentPlayers.DataSource = player_bs;
+
+
+                lb_NPCList.DisplayMember = "name";
+                lb_NPCList.ValueMember = "id";
+                lb_NPCList.DataSource = npc_bs;
             }
             catch
             {
@@ -328,7 +334,7 @@ namespace rpg_helper
             tempP.id = p.playerCount;
             p.addPlayer(tempP);
 
-            bs.ResetBindings(false);
+            player_bs.ResetBindings(false);
             Console.WriteLine(p.playerList.Count);
         }
 
@@ -390,6 +396,15 @@ namespace rpg_helper
         private void CaveButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://donjon.bin.sh/fantasy/dungeon/cavern.cgi");
+        }
+
+        private void btn_AddNPC_Click(object sender, EventArgs e)
+        {
+            NPC temp = new NPC();
+            temp.name = cb_NPCClass.Text;
+            temp.id = npc.npcCount;
+            npc.addNPC(temp);
+            npc_bs.ResetBindings(false);
         }
     }
 }

@@ -19,6 +19,7 @@ namespace rpg_helper
 
         public void addNPC(NPC npc)
         {
+            npc_List.Add(npc);
             npcCount++;
         }
 

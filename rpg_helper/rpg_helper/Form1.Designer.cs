@@ -181,11 +181,37 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.npc_page = new System.Windows.Forms.TabPage();
             this.txt_NPC_LIST = new System.Windows.Forms.Label();
-            this.lv_NPC_List = new System.Windows.Forms.ListView();
             this.reference_page = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.manualButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.lb_NPCList = new System.Windows.Forms.ListBox();
+            this.btn_AddNPC = new System.Windows.Forms.Button();
+            this.btn_UpdateNPC = new System.Windows.Forms.Button();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.cb_NPCAlignment = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.cb_NPCRace = new System.Windows.Forms.ComboBox();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.cb_NPCClass = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.ud_NPCchar = new System.Windows.Forms.NumericUpDown();
+            this.label39 = new System.Windows.Forms.Label();
+            this.ud_NPCwis = new System.Windows.Forms.NumericUpDown();
+            this.label40 = new System.Windows.Forms.Label();
+            this.ud_NPCcon = new System.Windows.Forms.NumericUpDown();
+            this.label41 = new System.Windows.Forms.Label();
+            this.ud_NPCdex = new System.Windows.Forms.NumericUpDown();
+            this.label42 = new System.Windows.Forms.Label();
+            this.ud_NPCstr = new System.Windows.Forms.NumericUpDown();
+            this.label43 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -218,6 +244,15 @@
             this.npc_page.SuspendLayout();
             this.reference_page.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.groupBox17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCchar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCwis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCdex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCstr)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1878,8 +1913,12 @@
             // 
             // npc_page
             // 
+            this.npc_page.Controls.Add(this.groupBox17);
+            this.npc_page.Controls.Add(this.btn_AddNPC);
+            this.npc_page.Controls.Add(this.btn_UpdateNPC);
+            this.npc_page.Controls.Add(this.groupBox16);
+            this.npc_page.Controls.Add(this.lb_NPCList);
             this.npc_page.Controls.Add(this.txt_NPC_LIST);
-            this.npc_page.Controls.Add(this.lv_NPC_List);
             this.npc_page.Location = new System.Drawing.Point(4, 22);
             this.npc_page.Name = "npc_page";
             this.npc_page.Size = new System.Drawing.Size(1262, 700);
@@ -1890,19 +1929,11 @@
             // txt_NPC_LIST
             // 
             this.txt_NPC_LIST.AutoSize = true;
-            this.txt_NPC_LIST.Location = new System.Drawing.Point(3, 19);
+            this.txt_NPC_LIST.Location = new System.Drawing.Point(900, 26);
             this.txt_NPC_LIST.Name = "txt_NPC_LIST";
             this.txt_NPC_LIST.Size = new System.Drawing.Size(80, 13);
             this.txt_NPC_LIST.TabIndex = 1;
             this.txt_NPC_LIST.Text = "NPCs In Scene";
-            // 
-            // lv_NPC_List
-            // 
-            this.lv_NPC_List.Location = new System.Drawing.Point(0, 35);
-            this.lv_NPC_List.Name = "lv_NPC_List";
-            this.lv_NPC_List.Size = new System.Drawing.Size(114, 281);
-            this.lv_NPC_List.TabIndex = 0;
-            this.lv_NPC_List.UseCompatibleStateImageBehavior = false;
             // 
             // reference_page
             // 
@@ -1937,6 +1968,342 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // lb_NPCList
+            // 
+            this.lb_NPCList.FormattingEnabled = true;
+            this.lb_NPCList.Location = new System.Drawing.Point(860, 42);
+            this.lb_NPCList.Name = "lb_NPCList";
+            this.lb_NPCList.Size = new System.Drawing.Size(120, 394);
+            this.lb_NPCList.TabIndex = 2;
+            // 
+            // btn_AddNPC
+            // 
+            this.btn_AddNPC.Location = new System.Drawing.Point(646, 43);
+            this.btn_AddNPC.Name = "btn_AddNPC";
+            this.btn_AddNPC.Size = new System.Drawing.Size(75, 23);
+            this.btn_AddNPC.TabIndex = 39;
+            this.btn_AddNPC.Text = "Add New";
+            this.btn_AddNPC.UseVisualStyleBackColor = true;
+            this.btn_AddNPC.Click += new System.EventHandler(this.btn_AddNPC_Click);
+            // 
+            // btn_UpdateNPC
+            // 
+            this.btn_UpdateNPC.Location = new System.Drawing.Point(646, 14);
+            this.btn_UpdateNPC.Name = "btn_UpdateNPC";
+            this.btn_UpdateNPC.Size = new System.Drawing.Size(75, 23);
+            this.btn_UpdateNPC.TabIndex = 38;
+            this.btn_UpdateNPC.Text = "Update";
+            this.btn_UpdateNPC.UseVisualStyleBackColor = true;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.comboBox1);
+            this.groupBox16.Controls.Add(this.label33);
+            this.groupBox16.Controls.Add(this.numericUpDown2);
+            this.groupBox16.Controls.Add(this.cb_NPCAlignment);
+            this.groupBox16.Controls.Add(this.label28);
+            this.groupBox16.Controls.Add(this.label29);
+            this.groupBox16.Controls.Add(this.cb_NPCRace);
+            this.groupBox16.Controls.Add(this.numericUpDown3);
+            this.groupBox16.Controls.Add(this.label30);
+            this.groupBox16.Controls.Add(this.cb_NPCClass);
+            this.groupBox16.Controls.Add(this.label31);
+            this.groupBox16.Controls.Add(this.label32);
+            this.groupBox16.Location = new System.Drawing.Point(3, 3);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(637, 100);
+            this.groupBox16.TabIndex = 37;
+            this.groupBox16.TabStop = false;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(360, 39);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(45, 20);
+            this.numericUpDown2.TabIndex = 13;
+            // 
+            // cb_NPCAlignment
+            // 
+            this.cb_NPCAlignment.FormattingEnabled = true;
+            this.cb_NPCAlignment.Items.AddRange(new object[] {
+            "Lawful Good",
+            "Neutral Good",
+            "Chaotic Good",
+            "Lawful Neutral",
+            "Neutral",
+            "Chaotic Neutral",
+            "Lawful Evil",
+            "Neutral Evil",
+            "Chaotic Evil"});
+            this.cb_NPCAlignment.Location = new System.Drawing.Point(410, 11);
+            this.cb_NPCAlignment.Name = "cb_NPCAlignment";
+            this.cb_NPCAlignment.Size = new System.Drawing.Size(121, 21);
+            this.cb_NPCAlignment.TabIndex = 18;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(349, 19);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(56, 13);
+            this.label28.TabIndex = 17;
+            this.label28.Text = "Alignment:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(300, 45);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(55, 13);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "Hit Points:";
+            // 
+            // cb_NPCRace
+            // 
+            this.cb_NPCRace.FormattingEnabled = true;
+            this.cb_NPCRace.Items.AddRange(new object[] {
+            "Dwarf",
+            "Elf",
+            "Halfing",
+            "Human"});
+            this.cb_NPCRace.Location = new System.Drawing.Point(45, 13);
+            this.cb_NPCRace.Name = "cb_NPCRace";
+            this.cb_NPCRace.Size = new System.Drawing.Size(121, 21);
+            this.cb_NPCRace.TabIndex = 15;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(243, 39);
+            this.numericUpDown3.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(45, 20);
+            this.numericUpDown3.TabIndex = 5;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(202, 46);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(36, 13);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "Level:";
+            // 
+            // cb_NPCClass
+            // 
+            this.cb_NPCClass.FormattingEnabled = true;
+            this.cb_NPCClass.Items.AddRange(new object[] {
+            "Cleric",
+            "Fighter",
+            "Rogue",
+            "Wizard"});
+            this.cb_NPCClass.Location = new System.Drawing.Point(222, 13);
+            this.cb_NPCClass.Name = "cb_NPCClass";
+            this.cb_NPCClass.Size = new System.Drawing.Size(121, 21);
+            this.cb_NPCClass.TabIndex = 14;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(4, 21);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(36, 13);
+            this.label31.TabIndex = 6;
+            this.label31.Text = "Race:";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(182, 21);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(35, 13);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Class:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cleric",
+            "Fighter",
+            "Rogue",
+            "Wizard"});
+            this.comboBox1.Location = new System.Drawing.Point(76, 39);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(5, 48);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(65, 13);
+            this.label33.TabIndex = 19;
+            this.label33.Text = "Armor Class:";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.ud_NPCchar);
+            this.groupBox17.Controls.Add(this.label39);
+            this.groupBox17.Controls.Add(this.ud_NPCwis);
+            this.groupBox17.Controls.Add(this.label40);
+            this.groupBox17.Controls.Add(this.ud_NPCcon);
+            this.groupBox17.Controls.Add(this.label41);
+            this.groupBox17.Controls.Add(this.ud_NPCdex);
+            this.groupBox17.Controls.Add(this.label42);
+            this.groupBox17.Controls.Add(this.ud_NPCstr);
+            this.groupBox17.Controls.Add(this.label43);
+            this.groupBox17.Location = new System.Drawing.Point(3, 109);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(344, 100);
+            this.groupBox17.TabIndex = 40;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Ability Scores";
+            // 
+            // ud_NPCchar
+            // 
+            this.ud_NPCchar.Location = new System.Drawing.Point(290, 21);
+            this.ud_NPCchar.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.ud_NPCchar.Name = "ud_NPCchar";
+            this.ud_NPCchar.Size = new System.Drawing.Size(45, 20);
+            this.ud_NPCchar.TabIndex = 26;
+            this.ud_NPCchar.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(231, 28);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(53, 13);
+            this.label39.TabIndex = 27;
+            this.label39.Text = "Charisma:";
+            // 
+            // ud_NPCwis
+            // 
+            this.ud_NPCwis.Location = new System.Drawing.Point(180, 47);
+            this.ud_NPCwis.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.ud_NPCwis.Name = "ud_NPCwis";
+            this.ud_NPCwis.Size = new System.Drawing.Size(45, 20);
+            this.ud_NPCwis.TabIndex = 24;
+            this.ud_NPCwis.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(117, 54);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(48, 13);
+            this.label40.TabIndex = 25;
+            this.label40.Text = "Wisdom:";
+            // 
+            // ud_NPCcon
+            // 
+            this.ud_NPCcon.Location = new System.Drawing.Point(180, 21);
+            this.ud_NPCcon.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.ud_NPCcon.Name = "ud_NPCcon";
+            this.ud_NPCcon.Size = new System.Drawing.Size(45, 20);
+            this.ud_NPCcon.TabIndex = 22;
+            this.ud_NPCcon.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(111, 28);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(65, 13);
+            this.label41.TabIndex = 23;
+            this.label41.Text = "Constitution:";
+            // 
+            // ud_NPCdex
+            // 
+            this.ud_NPCdex.Location = new System.Drawing.Point(60, 47);
+            this.ud_NPCdex.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.ud_NPCdex.Name = "ud_NPCdex";
+            this.ud_NPCdex.Size = new System.Drawing.Size(45, 20);
+            this.ud_NPCdex.TabIndex = 20;
+            this.ud_NPCdex.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(5, 54);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(51, 13);
+            this.label42.TabIndex = 21;
+            this.label42.Text = "Dexterity:";
+            // 
+            // ud_NPCstr
+            // 
+            this.ud_NPCstr.Location = new System.Drawing.Point(60, 21);
+            this.ud_NPCstr.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.ud_NPCstr.Name = "ud_NPCstr";
+            this.ud_NPCstr.Size = new System.Drawing.Size(45, 20);
+            this.ud_NPCstr.TabIndex = 19;
+            this.ud_NPCstr.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(6, 28);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(50, 13);
+            this.label43.TabIndex = 19;
+            this.label43.Text = "Strength:";
             // 
             // main_form
             // 
@@ -1995,6 +2362,17 @@
             this.npc_page.PerformLayout();
             this.reference_page.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCchar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCwis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCdex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ud_NPCstr)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2140,7 +2518,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btn_Notes_Save;
         private System.Windows.Forms.Label txt_NPC_LIST;
-        private System.Windows.Forms.ListView lv_NPC_List;
         private System.Windows.Forms.Button btn_AddPlayer;
         private System.Windows.Forms.Label lbl_Players;
         private System.Windows.Forms.ListBox lb_CurrentPlayers;
@@ -2159,6 +2536,33 @@
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Button button5e;
         private System.Windows.Forms.Button CaveButton;
+        private System.Windows.Forms.ListBox lb_NPCList;
+        private System.Windows.Forms.Button btn_AddNPC;
+        private System.Windows.Forms.Button btn_UpdateNPC;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.ComboBox cb_NPCAlignment;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ComboBox cb_NPCRace;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ComboBox cb_NPCClass;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.NumericUpDown ud_NPCchar;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.NumericUpDown ud_NPCwis;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.NumericUpDown ud_NPCcon;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.NumericUpDown ud_NPCdex;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.NumericUpDown ud_NPCstr;
+        private System.Windows.Forms.Label label43;
     }
 }
 
