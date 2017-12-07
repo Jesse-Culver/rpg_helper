@@ -381,5 +381,15 @@ namespace rpg_helper
         {
             System.Diagnostics.Process.Start("https://donjon.bin.sh/d20/dungeon/");
         }
+
+        private void button5e_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://donjon.bin.sh/5e/dungeon/index.cgi");
+        }
+
+        private void CaveButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://donjon.bin.sh/fantasy/dungeon/cavern.cgi");
+        }
     }
 }
