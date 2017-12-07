@@ -170,7 +170,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.map_page = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.OpenMap = new System.Windows.Forms.Button();
             this.notes_page = new System.Windows.Forms.TabPage();
@@ -181,6 +180,9 @@
             this.lv_NPC_List = new System.Windows.Forms.ListView();
             this.reference_page = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.manualButton = new System.Windows.Forms.Button();
+            this.browseMap = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.character_page.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -207,10 +209,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).BeginInit();
             this.map_page.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.notes_page.SuspendLayout();
             this.npc_page.SuspendLayout();
+            this.reference_page.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1769,7 +1772,6 @@
             // 
             // map_page
             // 
-            this.map_page.Controls.Add(this.pictureBox1);
             this.map_page.Controls.Add(this.groupBox9);
             this.map_page.Location = new System.Drawing.Point(4, 22);
             this.map_page.Name = "map_page";
@@ -1779,21 +1781,13 @@
             this.map_page.Text = "Map";
             this.map_page.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 69);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1247, 466);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.browseMap);
             this.groupBox9.Controls.Add(this.OpenMap);
             this.groupBox9.Location = new System.Drawing.Point(3, 6);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(90, 57);
+            this.groupBox9.Size = new System.Drawing.Size(177, 59);
             this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Controls";
@@ -1804,7 +1798,7 @@
             this.OpenMap.Name = "OpenMap";
             this.OpenMap.Size = new System.Drawing.Size(75, 23);
             this.OpenMap.TabIndex = 0;
-            this.OpenMap.Text = "OpenMap";
+            this.OpenMap.Text = "uploadMap";
             this.OpenMap.UseVisualStyleBackColor = true;
             this.OpenMap.Click += new System.EventHandler(this.OpenMap_Click);
             // 
@@ -1866,6 +1860,7 @@
             // 
             // reference_page
             // 
+            this.reference_page.Controls.Add(this.groupBox14);
             this.reference_page.Location = new System.Drawing.Point(4, 22);
             this.reference_page.Name = "reference_page";
             this.reference_page.Size = new System.Drawing.Size(1262, 700);
@@ -1876,6 +1871,36 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.manualButton);
+            this.groupBox14.Location = new System.Drawing.Point(4, 4);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(87, 59);
+            this.groupBox14.TabIndex = 0;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Manual Controls";
+            // 
+            // manualButton
+            // 
+            this.manualButton.Location = new System.Drawing.Point(6, 30);
+            this.manualButton.Name = "manualButton";
+            this.manualButton.Size = new System.Drawing.Size(75, 23);
+            this.manualButton.TabIndex = 0;
+            this.manualButton.Text = "Manual";
+            this.manualButton.UseVisualStyleBackColor = true;
+            this.manualButton.Click += new System.EventHandler(this.manualButton_Click);
+            // 
+            // browseMap
+            // 
+            this.browseMap.Location = new System.Drawing.Point(87, 19);
+            this.browseMap.Name = "browseMap";
+            this.browseMap.Size = new System.Drawing.Size(75, 22);
+            this.browseMap.TabIndex = 1;
+            this.browseMap.Text = "BrowseMap";
+            this.browseMap.UseVisualStyleBackColor = true;
+            this.browseMap.Click += new System.EventHandler(this.browseMap_Click);
             // 
             // main_form
             // 
@@ -1927,11 +1952,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.exp_numberbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.level_numberbox)).EndInit();
             this.map_page.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.notes_page.ResumeLayout(false);
             this.npc_page.ResumeLayout(false);
             this.npc_page.PerformLayout();
+            this.reference_page.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2073,7 +2099,6 @@
         private System.Windows.Forms.Button update_btn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button OpenMap;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btn_Notes_Save;
@@ -2091,6 +2116,9 @@
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.TextBox quantity;
         private System.Windows.Forms.Button btn_roll;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Button manualButton;
+        private System.Windows.Forms.Button browseMap;
     }
 }
 

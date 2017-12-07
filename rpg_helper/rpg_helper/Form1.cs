@@ -371,5 +371,15 @@ namespace rpg_helper
 
 
         }
+
+        private void manualButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.slideshare.net/ddnext/dd-5th-ed-players-handbook-color");
+        }
+
+        private void browseMap_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://donjon.bin.sh/d20/dungeon/");
+        }
     }
 }
